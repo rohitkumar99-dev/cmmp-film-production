@@ -119,6 +119,7 @@ a:hover {
 .offcanvas.show .navbar-nav .nav-item .nav-link {
   color: var(--navbar-text-color);
   font-size: 1.7rem !important;
+  font-weight: 700;
 }
 
 /* -------------------------------------------------------------- */
