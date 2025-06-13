@@ -1,0 +1,30 @@
+/* Navbar */
+@media (max-width: 991.98px) {
+    header {
+        padding: 10px 10px;
+    }
+
+  .offcanvas-fullscreen {
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: 100%;
+    background: url("../images/offcanvas-bg.jpg") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Featured Movies */
+@media (min-width: 768px) {
+  #featured-image-carousel .featured-landscape-image {
+    display: block;
+  }
+
+  #featured-image-carousel .featured-portrait-image {
+    display: none;
+  }
+}
+
+/* Upcoming and Rrleased Movies */
+

@@ -1,0 +1,25 @@
+:root {
+  --primary-color: #1a1a1a; /* Main background or text color (Dark) */
+  --secondary-color: #f0f0f0; /* Light backgrounds or text */
+  --accent-color: 243, 112, 33; /* Highlight, buttons, links, etc. */
+  --accent-color-deep: 221, 92, 12;
+  --body-bg-color: #ffffff; /* Body background color */
+  --text-color: #333333; /* Main text color */
+  --text-heading-color: rgb(var(--accent-color)); /* Heading text color */
+  --link-color: rgb(var(--accent-color)); /* Link color */
+  --link-hover-color: rgb(var(--accent-color-deep)); /* Link hover color */
+  --navbar-bg-color: rgb(var(--accent-color)); /* Navbar background color */
+  --navbar-text-color: #ffffff; /* Navbar text color */
+  --navbar-link-hover-color: #ffffff; /* Navbar link hover color */
+  --navbar-link-active-color: #ffffff; /* Navbar link active color */
+  --footer-bg-color: #f8f9fa; /* Footer background color */
+  --footer-text-color: #6c757d; /* Footer text color */
+  --button-bg-color: rgb(var(--accent-color)); /* Button background color */
+  --button-text-color: #ffffff; /* Button text color */
+  --button-hover-bg-color: rgb(
+    var(--accent-color-deep)
+  ); /* Button hover background color */
+  /* -------------------------------------------------------------------------- */
+  --primary-font-family: "Poppins", sans-serif; /* Primary font family */
+  --secondary-font-family: "Montserrat", sans-serif; /* Secondary font family */
+}

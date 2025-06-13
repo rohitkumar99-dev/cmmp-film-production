@@ -1,0 +1,274 @@
+.section {
+  width: 100%;
+  padding: 6rem 0;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* --------------------------------------------------------------- */
+
+/* Heading Class Styles */
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: var(--secondary-font-family);
+  text-transform: uppercase;
+  color: var(--text-heading-color);
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.heading.text-start::after,
+.heading.text-center::after,
+.heading.text-end::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    rgba(var(--accent-color), 1) 0%,
+    rgba(var(--accent-color), 0.5) 50%,
+    rgba(var(--accent-color), 0.1) 100%
+  );
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(var(--accent-color), 0.4);
+  animation: glow-line 1s ease-out forwards;
+  opacity: 0;
+  transform: scaleX(0.3);
+  transform-origin: left;
+}
+
+/* Specific positioning based on text alignment */
+.heading.text-start::after {
+  left: 0;
+  transform-origin: left;
+}
+
+.heading.text-end::after {
+  right: 0;
+  transform-origin: right;
+}
+
+@keyframes glow-line {
+  100% {
+    transform: translateX(0) scaleX(1);
+    opacity: 1;
+  }
+}
+
+/* ----------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+.marquee-list {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.marquee-list ul {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-animation: marquee 15s linear infinite running;
+  -moz-animation: marquee 15s linear infinite running;
+  -o-animation: marquee 15s linear infinite running;
+  -ms-animation: marquee 15s linear infinite running;
+  animation: marquee 15s linear infinite running;
+  margin: 0;
+}
+
+.marquee-list li {
+  min-width: 110px;
+  white-space: nowrap;
+  text-align: center;
+  padding: 0 0 0 13px;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-box;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  position: relative;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 80px;
+  font-family: "DM Sans", sans-serif;
+  font-display: swap;
+  color: #0b0b0b;
+  -webkit-text-stroke: 1px #0b0b0b;
+  margin: 0;
+  font-family: "Lato", serif;
+  font-weight: 900;
+}
+
+.marquee-list li span span {
+  color: #fff0;
+}
+
+.marquee-list li strong {
+  position: relative;
+  top: -23px;
+  color: #fff0;
+  padding: 0 15px;
+}
+
+@-moz-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translate(-20%);
+    -moz-transform: translate(-20%);
+    -o-transform: translate(-20%);
+    -ms-transform: translate(-20%);
+    transform: translate(-20%);
+  }
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translate(-20%);
+    -moz-transform: translate(-20%);
+    -o-transform: translate(-20%);
+    -ms-transform: translate(-20%);
+    transform: translate(-20%);
+  }
+}
+
+@-o-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translate(-20%);
+    -moz-transform: translate(-20%);
+    -o-transform: translate(-20%);
+    -ms-transform: translate(-20%);
+    transform: translate(-20%);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translate(-20%);
+    -moz-transform: translate(-20%);
+    -o-transform: translate(-20%);
+    -ms-transform: translate(-20%);
+    transform: translate(-20%);
+  }
+}
+
+/* ---------------------------------------------------------- */
+
+.showLessD .viewLessID {
+  display: flex;
+  align-items: center;
+  width: 423px;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+
+.showLessD .viewLessID .line__d {
+  width: calc(100% - 185px);
+  background: #0a0a0acc;
+  height: 1px
+}
+
+.showLessD .viewLessID .text_d {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: .04em;
+  color: #0a0a0acc;
+  text-transform: uppercase;
+  padding: 0 14px
+}
+
+showLessD .viewLessID img {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: -1px
+}
+
+/* --------------------------------------------- */
+
+.gmap {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.gmap iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
