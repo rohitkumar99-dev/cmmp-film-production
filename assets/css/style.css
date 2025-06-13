@@ -38,7 +38,8 @@ a:hover {
   background-color: transparent;
   border-radius: 50px;
   padding: 10px 20px;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease,
+    padding 0.3s ease;
 }
 
 .navbar.scrolled .container {
@@ -274,10 +275,6 @@ a:hover {
   /* cursor: pointer; */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
-}
-
-#upcomingAndReleasedMovies .movie-card:hover {
-  transform: scale(1.03);
 }
 
 #upcomingAndReleasedMovies .movie-card .overlay {
