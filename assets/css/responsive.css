@@ -1,8 +1,12 @@
 /* Navbar */
 @media (max-width: 991.98px) {
-    header {
-        padding: 10px 10px;
-    }
+  header .navbar {
+    padding: 10px 10px !important;
+  }
+
+  header .navbar-brand img {
+    max-width: 150px;
+  }
 
   .offcanvas-fullscreen {
     width: 100vw !important;
@@ -26,5 +30,137 @@
   }
 }
 
-/* Upcoming and Rrleased Movies */
+/* Our Story */
+@media (max-width: 1200px) {
+  #ourStory .story-text {
+    font-size: 1.1rem;
+  }
 
+  #ourStory .story-text:last-child {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #ourStory {
+    padding: 4rem 0 !important;
+    padding-bottom: 6rem !important;
+    height: 100%;
+  }
+
+  #ourStory .story-text {
+    font-size: 1rem;
+  }
+
+  #ourStory .story-text:last-child {
+    font-size: 1.2rem;
+  }
+
+  #ourStory .story-image::before {
+    top: 6px;
+    left: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  #ourStory {
+    height: 100%;
+    padding: 3rem 0 !important;
+    padding-bottom: 5rem !important;
+  }
+
+  #ourStory .story-text {
+    font-size: 0.95rem;
+  }
+
+  #ourStory .story-text:last-child {
+    font-size: 1.1rem;
+  }
+
+  #ourStory .story-image::before {
+    top: 5px;
+    left: 5px;
+    border-radius: 20px;
+  }
+
+  #ourStory .story-image img {
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  #ourStory {
+    height: 100%;
+    padding: 2rem 1rem !important;
+    padding-bottom: 6rem !important;
+  }
+
+  #ourStory .story-text {
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  #ourStory .story-text:last-child {
+    font-size: 1rem;
+  }
+
+  #ourStory .story-image::before {
+    top: 4px;
+    left: 4px;
+    border-radius: 15px;
+  }
+
+  #ourStory .story-image img {
+    border-radius: 15px;
+  }
+}
+
+/* ----------------------------------------------------------- */
+@media (max-width: 768px) {
+  #upcomingAndReleasedMovies .tab-btns .tab-btn {
+    width: 9rem;
+    height: 3.2rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #upcomingAndReleasedMovies .tab-btns {
+    top: -1rem;
+  }
+
+  #upcomingAndReleasedMovies .tab-btns .tab-btn {
+    width: 7.5rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+}
+
+/* ---------------------------------------------------- */
+@media (max-width: 768px) {
+  #directors .container {
+    margin-top: 4rem;
+  }
+
+  #directors .director-card .director-name {
+    font-size: 1rem;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Hide all director cards after the 5th one on mobile */
+  #directors .row .col-12:nth-child(n + 6) {
+    display: none !important;
+  }
+
+  #directors .director-card .director-name {
+    font-size: 0.9rem;
+    margin-top: 6px;
+  }
+
+  #directors .director-card img {
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  }
+}
