@@ -130,6 +130,11 @@ a:hover {
   font-size: 1.2rem;
 }
 
+.offcanvas-header .btn-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 /* -------------------------------------------------------------- */
 
 /* Featured Movies Styles */
