@@ -225,105 +225,24 @@ a:hover {
 }
 
 /* ----------------------------------------------------------------- */
-
-#upcomingAndReleasedMovies {
+#upcomingAndReleasedMovies .nav {
+  border-bottom: 1px solid #ddd;
   position: relative;
+  padding-bottom: 5px;
 }
 
-#upcomingAndReleasedMovies .tab-btns {
-  position: absolute;
-  top: -2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 9;
-}
-
-#upcomingAndReleasedMovies .tab-btns .tab-btn {
-  width: 12rem;
-  height: 4rem;
-  background-color: #2e2e2e;
-  color: rgb(var(--accent-color));
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-transform: uppercase;
+#upcomingAndReleasedMovies .nav .nav-link {
+  color: var(--text-color, #444);
+  padding: 0.5rem 1rem;
+  background: transparent;
   border: none;
+  /* font-size: 1.1rem; */
+  transition: color 0.3s ease;
 }
 
-#upcomingAndReleasedMovies .tab-btns .tab-btn.active {
-  background-color: rgb(var(--accent-color));
-  color: #fff;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-}
-
-#upcomingAndReleasedMovies .tab-btns .tab-btn:first-child {
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-}
-
-#upcomingAndReleasedMovies .tab-btns .tab-btn:last-child {
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-}
-
-#upcomingAndReleasedMovies .movie-card {
-  position: relative;
-  width: 100%;
-  height: auto;
-  border-radius: 15px;
-  overflow: hidden;
-  /* cursor: pointer; */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
-}
-
-#upcomingAndReleasedMovies .movie-card .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent 60%);
-  z-index: 1;
-  pointer-events: none;
-}
-
-#upcomingAndReleasedMovies .movie-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-#upcomingAndReleasedMovies .movie-title,
-#upcomingAndReleasedMovies .movie-date {
-  position: absolute;
-  z-index: 2;
-  color: #fff;
-  padding: 0 10px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  transform: translateY(20px);
-  opacity: 0;
-  transition: all 0.4s ease-in-out;
-}
-
-#upcomingAndReleasedMovies .movie-title {
-  bottom: 45px;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-#upcomingAndReleasedMovies .movie-date {
-  bottom: 20px;
-  font-size: 0.85rem;
-}
-
-#upcomingAndReleasedMovies .movie-card:hover .movie-title,
-#upcomingAndReleasedMovies .movie-card:hover .movie-date {
-  transform: translateY(0);
-  opacity: 1;
+#upcomingAndReleasedMovies .nav .nav-link:hover,
+#upcomingAndReleasedMovies .nav .nav-link.active {
+  color: var(--link-color);
 }
 
 /* --------------------------------------------------------------- */

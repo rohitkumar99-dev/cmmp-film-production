@@ -264,82 +264,61 @@
 
     <!-- Upcoming & Released Movies Section -->
     <section id="upcomingAndReleasedMovies" class="section">
-      <div class="container">
-        <div class="tab-btns d-flex justify-content-center mb-4">
-          <button class="tab-btn active" data-tab="upcoming">Upcoming</button>
-          <button class="tab-btn" data-tab="released">Released</button>
-        </div>
-
-        <div class="tab-content">
-          <div class="tab-pane fade show active" id="upcoming" role="tabpanel">
-            <div id="upcomingMovieCarousel" class="movieCarousel splide">
-              <div class="splide__track">
-                <ul class="splide__list" style="padding: 25px 0 !important">
-                  <!-- Repeat slides -->
-                  <li class="splide__slide">
-                    <div class="movie-card">
-                      <div class="overlay"></div>
-                      <img src="https://dharma-production.com/api/upload/readFile?file=680889acb51ad62a62113389.jpg" alt="Upcoming Movie" class="movie-image" />
-                      <h6 class="movie-title">Upcoming Movie Title</h6>
-                      <p class="movie-date">(13 June 2025)</p>
-                    </div>
-                  </li>
-                  <li class="splide__slide">
-                    <div class="movie-card">
-                      <div class="overlay"></div>
-                      <img src="https://dharma-production.com/api/upload/readFile?file=680889acb51ad62a62113389.jpg" alt="Upcoming Movie" class="movie-image" />
-                      <h6 class="movie-title">Upcoming Movie Title</h6>
-                      <p class="movie-date">(13 June 2025)</p>
-                    </div>
-                  </li>
-                  <li class="splide__slide">
-                    <div class="movie-card">
-                      <div class="overlay"></div>
-                      <img src="https://dharma-production.com/api/upload/readFile?file=680889acb51ad62a62113389.jpg" alt="Upcoming Movie" class="movie-image" />
-                      <h6 class="movie-title">Upcoming Movie Title</h6>
-                      <p class="movie-date">(13 June 2025)</p>
-                    </div>
-                  </li>
-                </ul>
+      <ul class="nav filter-nav justify-content-center position-relative" id="upcomingAndReleasedMoviesTabs">
+        <li class="nav-item">
+          <button class="nav-link active">All</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link">Released</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link">Upcoming</button>
+        </li>
+      </ul>
+    
+      <div class="container gallery mt-4">
+        <div class="gallery-grid" id="galleryGrid">
+          <div class="gallery-item" data-category="Released">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div class="shadow p-2 rounded">
+                <img
+                  src="https://dharma-production.com/api/upload/readFile?file=67d7d831bacb707fce3462a2.jpg"
+                  alt="Released Movie 1"
+                  class="img-fluid"
+                />
               </div>
-            </div>
+            </a>
           </div>
-          <div class="tab-pane fade" id="released" role="tabpanel">
-            <div id="releasedMovieCarousel" class="movieCarousel splide">
-              <div class="splide__track">
-                <ul class="splide__list" style="padding: 25px 0 !important">
-                  <!-- Repeat slides -->
-                  <li class="splide__slide">
-                    <div class="movie-card">
-                      <div class="overlay"></div>
-                      <img src="https://dharma-production.com/api/upload/readFile?file=683545070745d30fda9070b5.jpg" alt="Upcoming Movie" class="movie-image" />
-                      <h6 class="movie-title">Upcoming Movie Title</h6>
-                      <p class="movie-date">(13 June 2025)</p>
-                    </div>
-                  </li>
-                  <li class="splide__slide">
-                    <div class="movie-card">
-                      <div class="overlay"></div>
-                      <img src="https://dharma-production.com/api/upload/readFile?file=683545070745d30fda9070b5.jpg" alt="Upcoming Movie" class="movie-image" />
-                      <h6 class="movie-title">Upcoming Movie Title</h6>
-                      <p class="movie-date">(13 June 2025)</p>
-                    </div>
-                  </li>
-                  <li class="splide__slide">
-                    <div class="movie-card">
-                      <div class="overlay"></div>
-                      <img src="https://dharma-production.com/api/upload/readFile?file=683545070745d30fda9070b5.jpg" alt="Upcoming Movie" class="movie-image" />
-                      <h6 class="movie-title">Upcoming Movie Title</h6>
-                      <p class="movie-date">(13 June 2025)</p>
-                    </div>
-                  </li>
-                </ul>
+          <div class="gallery-item" data-category="Upcoming">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div class="shadow p-2 rounded">
+                <img
+                  src="https://dharma-production.com/api/upload/readFile?file=683544570745d30fda907067.jpg"
+                  alt="Upcoming Movie 1"
+                  class="img-fluid"
+                />
               </div>
-            </div>
+            </a>
+          </div>
+          <div class="gallery-item" data-category="Upcoming">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div class="shadow p-2 rounded">
+                <img
+                  src="https://dharma-production.com/api/upload/readFile?file=680889acb51ad62a62113389.jpg"
+                  alt="Upcoming Movie 2"
+                  class="img-fluid"
+                />
+              </div>
+            </a>
           </div>
         </div>
       </div>
-      </section>
+    </section>
+    
+    
+    
+    
+    
 
     <!-- Directors Section -->
     <section id="directors" class="section">
@@ -581,6 +560,7 @@
     <!-- Custom Scripts -->
     <script src="./assets/js/navbar.js"></script>
     <script src="./assets/js/splide.js"></script>
+    <script src="./assets/js/filter-movies.js"></script>
 
     <!-- ********************************************************* -->
 
