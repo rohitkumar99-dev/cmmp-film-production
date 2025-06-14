@@ -123,6 +123,13 @@ a:hover {
   font-weight: 700;
 }
 
+.offcanvas-header .btn-close{
+  background: none;
+  color: #fff;
+  opacity: 1;
+  font-size: 1.2rem;
+}
+
 /* -------------------------------------------------------------- */
 
 /* Featured Movies Styles */
