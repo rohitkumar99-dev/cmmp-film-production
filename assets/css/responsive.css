@@ -12,7 +12,7 @@
     width: 100vw !important;
     height: 100vh !important;
     max-width: 100%;
-    background: url("../images/offcanvas-bg.jpg") !important;
+    background: url("../images/offcanvas-bg.webp") !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -116,7 +116,6 @@
 }
 
 /* ----------------------------------------------------------- */
-
 
 /* ---------------------------------------------------- */
 @media (max-width: 768px) {
