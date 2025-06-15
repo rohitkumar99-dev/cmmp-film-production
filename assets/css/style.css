@@ -305,6 +305,14 @@ a:hover {
   margin-top: 10px;
 }
 
+/* ------------------------------------------------------------------------------ */
+
+#trailer {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/trailer-section.jpg") center/cover no-repeat;
+}
+
 /* ------------------------------------------------------------------------ */
 
 /* On The Map Styles */
