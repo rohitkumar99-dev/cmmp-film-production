@@ -8,6 +8,7 @@ body {
   font-family: var(--primary-font-family);
   background-color: var(--body-bg-color);
   color: var(--text-color);
+  scroll-behavior: smooth;
 }
 
 a {
