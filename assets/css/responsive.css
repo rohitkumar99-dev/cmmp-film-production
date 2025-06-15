@@ -80,10 +80,6 @@
     font-size: 0.95rem;
   }
 
-  #ourStory .story-text:last-child {
-    font-size: 1.1rem;
-  }
-
   #ourStory .story-image::before {
     top: 5px;
     left: 5px;
@@ -105,10 +101,6 @@
   #ourStory .story-text {
     font-size: 0.9rem;
     text-align: justify;
-  }
-
-  #ourStory .story-text:last-child {
-    font-size: 1rem;
   }
 
   #ourStory .story-image::before {
