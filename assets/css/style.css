@@ -32,7 +32,6 @@ a:hover {
 .navbar {
   background-color: transparent;
   color: var(--navbar-text-color);
-  
 }
 
 .navbar .container {
@@ -203,11 +202,6 @@ a:hover {
   color: #fff;
 }
 
-#ourStory .story-text:last-child {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
 #ourStory .story-image {
   position: relative;
   z-index: 0;
@@ -314,6 +308,41 @@ a:hover {
 }
 
 /* ------------------------------------------------------------------------ */
+.bts-item {
+  width: 100%;
+  height: 300px; /* Adjust as needed */
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bts-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.bts-image img {
+  transition: transform 0.5s ease;
+}
+
+.bts-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.bts-item:hover .bts-overlay {
+  opacity: 1;
+}
+
+.bts-item:hover img {
+  transform: scale(1.05);
+}
+
+/* ------------------------------------------------------------------------ */
 
 /* On The Map Styles */
 
@@ -364,6 +393,24 @@ a:hover {
   background: linear-gradient(to top, #fff, transparent);
 }
 
+#onTheMap h5 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #222;
+  position: relative;
+}
+
+#onTheMap h5::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #ff5722;
+  margin-top: 0.3rem;
+  border-radius: 2px;
+}
+
 #onTheMap .contact-list {
   padding-left: 0;
   margin: 0;
@@ -371,38 +418,60 @@ a:hover {
 
 #onTheMap .contact-list li {
   display: flex;
-  align-items: center; /* vertically center icon */
-  margin-bottom: 1rem;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
   font-size: 1rem;
+  /* background: #f9f9f9; */
+  padding: 1rem;
+  /* border-radius: 0.75rem; */
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); */
+  /* transition: transform 0.2s ease, box-shadow 0.2s ease; */
+}
+
+#onTheMap .contact-list li:hover {
+  /* transform: translateY(-2px); */
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); */
 }
 
 #onTheMap .contact-list i {
-  font-size: 1.2rem;
-  margin-right: 0.75rem;
+  font-size: 1.4rem;
+  color: #ff5722;
   flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+#onTheMap .contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 #onTheMap .contact-list .company {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
+  color: #222;
 }
 
 #onTheMap .contact-list .address {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 400;
+  color: #555;
+  line-height: 1.4;
 }
 
 #onTheMap .contact-details a {
-  display: block;
   text-decoration: none;
+  color: #333;
   font-weight: 500;
-  line-height: 1.4; /* tighter spacing */
-  margin-bottom: 0.1rem;
+  transition: color 0.2s ease;
 }
 
 #onTheMap .contact-details a:hover {
+  color: #ff5722;
   text-decoration: underline;
 }
+
 
 /* ---------------------------------------------------- */
 #aboutPage #founders .image {
@@ -471,7 +540,7 @@ a:hover {
   background: #fff;
   box-shadow: 0px 10px 32px 0.3px rgba(172, 172, 172, 0.22);
   padding: 30px 20px;
-  border-radius: 10px;;
+  border-radius: 10px;
 }
 
 #aboutPage #team .bt-team .team-info h3 {

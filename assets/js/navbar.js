@@ -7,3 +7,13 @@ $(window)
     }
   })
   .trigger("scroll");
+
+
+  $(document).on("click", ".offcanvas .nav-link", function () {
+    var offcanvasEl = $(this).closest(".offcanvas");
+    var offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasEl[0]);
+    if (offcanvasInstance) {
+      offcanvasInstance.hide();
+    }
+  });
+  
