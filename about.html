@@ -81,11 +81,11 @@
     />
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="./assets/css/variables.css?v=1.4" />
-    <link rel="stylesheet" href="./assets/css/preloader.css?v=1.4" />
-    <link rel="stylesheet" href="./assets/css/class.css?v=1.4" />
-    <link rel="stylesheet" href="./assets/css/style.css?v=1.4" />
-    <link rel="stylesheet" href="./assets/css/responsive.css?v=1.4" />
+    <link rel="stylesheet" href="./assets/css/variables.css?v=1.6" />
+    <link rel="stylesheet" href="./assets/css/preloader.css?v=1.6" />
+    <link rel="stylesheet" href="./assets/css/class.css?v=1.6" />
+    <link rel="stylesheet" href="./assets/css/style.css?v=1.6" />
+    <link rel="stylesheet" href="./assets/css/responsive.css?v=1.6" />
   </head>
   <body id="aboutPage" class="loading">
     <div id="preloader">
@@ -480,7 +480,7 @@
     </footer>
 
     <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647"
-      ><i class="fal fa-level-up"></i
+      ><i class="bi bi-arrow-bar-up"></i
     ></a>
 
     <!-- jQuery CDN -->
@@ -490,12 +490,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom Scripts -->
-    <script src="./assets/js/preloader.js?v=1.4"></script>
-    <script src="./assets/js/navbar.js?v=1.4"></script>
+    <script src="./assets/js/preloader.js?v=1.6"></script>
+    <script src="./assets/js/navbar.js?v=1.6"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const scrollUp = document.getElementById("scrollUp");
-    
+
         window.addEventListener("scroll", function () {
           if (window.scrollY > 300) {
             scrollUp.classList.add("active");
@@ -503,14 +503,12 @@
             scrollUp.classList.remove("active");
           }
         });
-    
+
         scrollUp.addEventListener("click", function (e) {
           e.preventDefault();
           window.scrollTo({ top: 0, behavior: "smooth" });
         });
       });
     </script>
-    
-    
   </body>
 </html>
