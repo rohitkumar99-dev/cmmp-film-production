@@ -28,6 +28,11 @@
     background-size: cover;
     background-position: center;
   }
+
+  header .navbar .nav-link {
+    transition: none;
+  font-size: 1.7rem !important;
+  }
 }
 
 /* Featured Movies */
