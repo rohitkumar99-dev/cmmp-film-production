@@ -197,7 +197,7 @@ a:hover {
 }
 
 #ourStory .story-text {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6;
   color: #fff;
 }
@@ -402,7 +402,7 @@ a:hover {
 }
 
 #onTheMap h5::after {
-  content: '';
+  content: "";
   display: block;
   width: 40px;
   height: 3px;
@@ -424,7 +424,7 @@ a:hover {
   font-size: 1rem;
   /* background: #f9f9f9; */
   padding-left: 1rem;
-  padding-bottom: .8rem;
+  padding-bottom: 0.8rem;
   /* border-radius: 0.75rem; */
   /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); */
   /* transition: transform 0.2s ease, box-shadow 0.2s ease; */
@@ -472,7 +472,6 @@ a:hover {
   color: #ff5722;
   text-decoration: underline;
 }
-
 
 /* ---------------------------------------------------- */
 #aboutPage #founders .image {

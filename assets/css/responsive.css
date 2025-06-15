@@ -43,13 +43,7 @@
 
 /* Our Story */
 @media (max-width: 1200px) {
-  #ourStory .story-text {
-    font-size: 1.1rem;
-  }
 
-  #ourStory .story-text:last-child {
-    font-size: 1.3rem;
-  }
 }
 
 @media (max-width: 992px) {
@@ -57,10 +51,6 @@
     padding: 4rem 0 !important;
     padding-bottom: 6rem !important;
     height: 100%;
-  }
-
-  #ourStory .story-text {
-    font-size: 1rem;
   }
 
   #ourStory .story-image::before {
@@ -74,10 +64,6 @@
     height: 100%;
     padding: 3rem 0 !important;
     padding-bottom: 5rem !important;
-  }
-
-  #ourStory .story-text {
-    font-size: 0.95rem;
   }
 
   #ourStory .story-image::before {
