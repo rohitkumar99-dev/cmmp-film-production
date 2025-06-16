@@ -180,7 +180,7 @@ a:hover {
   display: flex;
   align-items: center;
   color: #fff;
-  scroll-margin-top: 80px;
+  scroll-margin-top: 100px;
 }
 
 /* Overlay for readability */
