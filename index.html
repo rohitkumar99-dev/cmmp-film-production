@@ -93,12 +93,12 @@
     />
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="./assets/css/variables.css?v=1.7" />
-    <link rel="stylesheet" href="./assets/css/preloader.css?v=1.7" />
-    <link rel="stylesheet" href="./assets/css/class.css?v=1.7" />
-    <link rel="stylesheet" href="./assets/css/splide.css?v=1.7" />
-    <link rel="stylesheet" href="./assets/css/style.css?v=1.7" />
-    <link rel="stylesheet" href="./assets/css/responsive.css?v=1.7" />
+    <link rel="stylesheet" href="./assets/css/variables.css?v=1.9" />
+    <link rel="stylesheet" href="./assets/css/preloader.css?v=1.9" />
+    <link rel="stylesheet" href="./assets/css/class.css?v=1.9" />
+    <link rel="stylesheet" href="./assets/css/splide.css?v=1.9" />
+    <link rel="stylesheet" href="./assets/css/style.css?v=1.9" />
+    <link rel="stylesheet" href="./assets/css/responsive.css?v=1.9" />
   </head>
   <body class="loading">
     <div id="preloader">
@@ -283,11 +283,11 @@
         </li>
       </ul>
     
-      <div class="container gallery mt-4">
-        <div class="gallery-grid" id="galleryGrid">
-          <div class="gallery-item" data-category="Upcoming">
+      <div class="container-fluid mt-4">
+        <div class="row g-3 justify-content-center">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-category="Upcoming">
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <div class="shadow p-2 rounded">
+              <div class="shadow p-2 item rounded">
                 <img
                   src="./uploads/web-series/tonhislava-2x3.webp"
                   alt="Tonhislava - The Glory Of Tonhi"
@@ -296,9 +296,9 @@
               </div>
             </a>
           </div>
-          <div class="gallery-item" data-category="Upcoming">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-category="Upcoming">
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <div class="shadow p-2 rounded">
+              <div class="shadow p-2 item rounded">
                 <img
                   src="./uploads/movies/the-transaction-2x3.webp"
                   alt="The Transaction"
@@ -307,8 +307,10 @@
               </div>
             </a>
           </div>
+          <!-- Add more .col elements as needed -->
         </div>
       </div>
+      
     </section>
     
     <!-- Directors Section -->
@@ -763,10 +765,10 @@
     
 
     <!-- Custom Scripts -->
-    <script src="./assets/js/preloader.js?v=1.7"></script>
-    <script src="./assets/js/navbar.js?v=1.7"></script>
-    <script src="./assets/js/splide.js?v=1.7"></script>
-    <script src="./assets/js/filter-movies.js?v=1.7"></script>
+    <script src="./assets/js/preloader.js?v=1.9"></script>
+    <script src="./assets/js/navbar.js?v=1.9"></script>
+    <script src="./assets/js/splide.js?v=1.9"></script>
+    <script src="./assets/js/filter-movies.js?v=1.9"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const scrollUp = document.getElementById("scrollUp");
