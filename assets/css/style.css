@@ -313,48 +313,6 @@ a:hover {
 
 /* --------------------------------------------------------------- */
 
-#directors {
-  background-color: #eee;
-}
-
-#directors .container {
-  margin-top: 6rem;
-}
-
-#directors .director-card {
-  cursor: default;
-}
-
-#directors .director-card img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 4/5;
-  object-fit: cover;
-  border: 1px solid #2e2e2e;
-  border-radius: 10px;
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
-  filter: grayscale(100%);
-  transition: filter 0.3s ease, transform 0.3s ease;
-}
-
-#directors .director-card:hover img {
-  filter: grayscale(0%);
-}
-
-#directors .director-card .director-name {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-top: 10px;
-}
-
-/* ------------------------------------------------------------------------------ */
-
-#trailer {
-  width: 100%;
-  height: 100vh;
-  background: url("../images/trailer-section.jpg") center/cover no-repeat;
-}
-
 /* ------------------------------------------------------------------------ */
 #bts {
   background: #1a1a1a;
