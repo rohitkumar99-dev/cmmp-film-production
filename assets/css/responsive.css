@@ -54,7 +54,20 @@
 }
 
 /* Our Story */
+@media (max-width: 768px) {
+  #ourStory h2.heading {
+    /* font-size: 2rem; */
+  }
+  .story-text {
+    font-size: 1rem;
+  }
+}
 
+@media (max-width: 576px) {
+  #ourStory {
+      padding: 2rem 0;
+  }
+}
 
 /* ----------------------------------------------------------- */
 

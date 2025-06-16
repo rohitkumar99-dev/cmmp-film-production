@@ -180,7 +180,6 @@ a:hover {
   background: url("../images/trailer-section.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
-  padding: 2rem 0;
   color: #fff;
 }
 
@@ -284,16 +283,6 @@ a:hover {
 
 .story-image img:hover {
   transform: scale(1.03);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  #ourStory h2.heading {
-    /* font-size: 2rem; */
-  }
-  .story-text {
-    font-size: 1rem;
-  }
 }
 
 /* ----------------------------------------------------------------- */
