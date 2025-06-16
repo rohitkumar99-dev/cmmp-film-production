@@ -12,8 +12,8 @@
   --navbar-text-color: #ffffff; /* Navbar text color */
   --navbar-link-hover-color: #ffffff; /* Navbar link hover color */
   --navbar-link-active-color: #ffffff; /* Navbar link active color */
-  --footer-bg-color: #f8f9fa; /* Footer background color */
-  --footer-text-color: #6c757d; /* Footer text color */
+  --footer-bg-color: #1f1f1f; /* Footer background color */
+  --footer-text-color: #fff; /* Footer text color */
   --button-bg-color: rgb(var(--accent-color)); /* Button background color */
   --button-text-color: #ffffff; /* Button text color */
   --button-hover-bg-color: rgb(
