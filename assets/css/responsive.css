@@ -2,7 +2,6 @@
 @media (max-width: 991.98px) {
   header .navbar {
     padding: 10px 10px !important;
-    
   }
 
   header .navbar.scrolled {
@@ -25,7 +24,7 @@
 
   header .navbar .nav-link {
     transition: none;
-  font-size: 1.7rem !important;
+    font-size: 1.7rem !important;
   }
 }
 
@@ -38,25 +37,24 @@
   }
 
   .splide__slide {
-    height: calc(100vw * 3 / 2); /* 2:3 ratio based on viewport width */
+     /* 2:3 ratio based on viewport width */
   }
 }
 
 /* Desktop: Landscape image shown */
 @media (min-width: 768px) {
   .featured-landscape-image {
-    aspect-ratio: 19/9;
+    aspect-ratio: 16/9;
     display: block;
   }
 
   .splide__slide {
-    height: calc(100vw * 9 / 19); /* 19:9 ratio based on viewport width */
+     /* 16:9 ratio based on viewport width */
   }
 }
 
 /* Our Story */
 @media (max-width: 1200px) {
-
 }
 
 @media (max-width: 992px) {

@@ -32,19 +32,18 @@ a:hover {
 
 .navbar {
   background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.8),
-      transparent
-    );
-    transition: background 0.3s ease;
+    to bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8),
+    transparent
+  );
+  transition: background 0.3s ease;
   color: var(--navbar-text-color);
-
 }
 
 .navbar.scrolled {
   background: transparent;
-    transition: none;
+  transition: none;
 }
 
 .navbar .container {
@@ -72,7 +71,6 @@ a:hover {
   filter: brightness(0) invert(1);
   transition: max-width 0.3s ease, filter 0.3s ease;
 }
-
 
 .navbar.scrolled .navbar-brand img {
   max-width: 150px;
@@ -154,20 +152,23 @@ a:hover {
 /* -------------------------------------------------------------- */
 
 #featured-image-carousel .splide__slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #000; /* fallback background */
-  overflow: hidden;
+}
+
+.featured-landscape-image {
+  aspect-ratio: 16/9;
+}
+
+.featured-portrait-image {
+  aspect-ratio: 2/3;
 }
 
 /* Common style */
 .featured-landscape-image,
 .featured-portrait-image {
-  width: auto;
-  height: 100% !important;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+  object-position: center;
   display: none;
 }
 
