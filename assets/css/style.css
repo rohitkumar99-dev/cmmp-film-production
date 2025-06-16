@@ -536,6 +536,9 @@ a:hover {
 #aboutPage #founders .image img {
   width: 100%;
   height: auto;
+  aspect-ratio: 4/6;
+  object-fit: cover;
+  object-position: center;
 }
 
 #aboutPage #founders .icon-hover {
@@ -563,7 +566,7 @@ a:hover {
   transition: transform 0.3s ease;
 }
 
-.member-designation {
+#aboutPage #team .member-box .member-designation {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -577,7 +580,7 @@ a:hover {
   z-index: 1;
 }
 
-.member-overlay {
+#aboutPage #team .member-box .member-overlay {
   position: absolute;
   top: 0;
   left: 0;
