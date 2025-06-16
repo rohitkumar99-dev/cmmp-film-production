@@ -176,7 +176,6 @@ a:hover {
 #ourStory {
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
   background: url("../images/trailer-section.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
