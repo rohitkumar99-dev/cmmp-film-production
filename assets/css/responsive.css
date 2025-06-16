@@ -16,7 +16,7 @@
     width: 100vw !important;
     height: 100vh !important;
     max-width: 100%;
-    background: url("../images/offcanvas-bg.webp") !important;
+    background: url("https://crazymoonmovingpictures.com/images/offcanvas-bg.webp") !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -37,7 +37,7 @@
   }
 
   .splide__slide {
-     /* 2:3 ratio based on viewport width */
+    /* 2:3 ratio based on viewport width */
   }
 }
 
@@ -49,7 +49,7 @@
   }
 
   .splide__slide {
-     /* 16:9 ratio based on viewport width */
+    /* 16:9 ratio based on viewport width */
   }
 }
 
@@ -65,7 +65,7 @@
 
 @media (max-width: 576px) {
   #ourStory {
-      padding: 2rem 0;
+    padding: 2rem 0;
   }
 }
 
