@@ -54,62 +54,7 @@
 }
 
 /* Our Story */
-@media (max-width: 1200px) {
-}
 
-@media (max-width: 992px) {
-  #ourStory {
-    padding: 4rem 0 !important;
-    padding-bottom: 6rem !important;
-    height: 100%;
-  }
-
-  #ourStory .story-image::before {
-    top: 6px;
-    left: 6px;
-  }
-}
-
-@media (max-width: 768px) {
-  #ourStory {
-    height: 100%;
-    padding: 3rem 0 !important;
-    padding-bottom: 5rem !important;
-  }
-
-  #ourStory .story-image::before {
-    top: 5px;
-    left: 5px;
-    border-radius: 20px;
-  }
-
-  #ourStory .story-image img {
-    border-radius: 20px;
-  }
-}
-
-@media (max-width: 576px) {
-  #ourStory {
-    height: 100%;
-    padding: 2rem 1rem !important;
-    padding-bottom: 6rem !important;
-  }
-
-  #ourStory .story-text {
-    /* font-size: 0.9rem; */
-    text-align: justify;
-  }
-
-  #ourStory .story-image::before {
-    top: 4px;
-    left: 4px;
-    border-radius: 15px;
-  }
-
-  #ourStory .story-image img {
-    border-radius: 15px;
-  }
-}
 
 /* ----------------------------------------------------------- */
 
