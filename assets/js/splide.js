@@ -1,27 +1,41 @@
-// Featured Image Carousel
 document.addEventListener("DOMContentLoaded", function () {
-  const isMobile = window.innerWidth < 768;
   const carousel = document.getElementById("featured-image-carousel");
   const slides = carousel.querySelectorAll(".splide__slide");
+  const isMobile = window.innerWidth < 768;
+
+  let imagesToLoad = 0;
+  let imagesLoaded = 0;
 
   slides.forEach((slide) => {
     const img = slide.querySelector(
       isMobile ? ".featured-portrait-image" : ".featured-landscape-image"
     );
 
-    // If already broken
-    if (!img.complete || img.naturalWidth === 0) {
-      slide.remove();
-      return;
-    }
+    if (!img) return;
 
-    // If error happens after load
-    img.addEventListener("error", () => {
-      slide.remove();
-    });
+    imagesToLoad++;
+
+    // Check if already loaded
+    if (img.complete && img.naturalWidth !== 0) {
+      imagesLoaded++;
+    } else {
+      img.addEventListener("load", () => {
+        imagesLoaded++;
+        if (imagesLoaded === imagesToLoad) initSplide();
+      });
+
+      img.addEventListener("error", () => {
+        slide.remove();
+        imagesToLoad--; // exclude broken image
+        if (imagesLoaded === imagesToLoad) initSplide();
+      });
+    }
   });
 
-  setTimeout(() => {
+  // If all were already loaded
+  if (imagesLoaded === imagesToLoad) initSplide();
+
+  function initSplide() {
     const validSlides = carousel.querySelectorAll(".splide__slide");
 
     if (validSlides.length > 0) {
@@ -34,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
         pagination: validSlides.length > 1,
         breakpoints: {
           768: {
-            arrows: false, // Still disable arrows for small screens
+            arrows: false,
             pagination: validSlides.length > 1,
           },
         },
@@ -42,19 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       new Splide("#featured-image-carousel", splideOptions).mount();
     } else {
-      console.warn("No valid slides available for Splide.");
+      console.warn("No valid slides for Splide.");
     }
-  }, 100);
-});
-
-
-// -----------------------------
-
-document.addEventListener("DOMContentLoaded", function () {
-  new Splide("#thumbnail-carousel", {
-    fixedWidth: 100,
-    gap: 10,
-    rewind: true,
-    pagination: false,
-  }).mount();
+  }
 });
