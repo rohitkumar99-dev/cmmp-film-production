@@ -614,6 +614,47 @@ a:hover {
   color: #fe6600;
 }
 
+#workPage .movie-ticket {
+  border-radius: 0.75rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+}
+#workPage .ticket-left {
+  width: 120px;
+  text-align: center;
+  border-right: 2px dashed #ccc;
+}
+#workPage .ticket-divider {
+  width: 2px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #ccc,
+    #ccc 4px,
+    transparent 4px,
+    transparent 8px
+  );
+}
+#workPage .ticket-right {
+  position: relative;
+}
+#workPage .coming-soon {
+  font-size: 0.7rem;
+  z-index: 2;
+}
+#workPage .dot-separator {
+  color: #999;
+  margin: 0 0.3rem;
+  font-size: 0.65rem;
+  user-select: none;
+}
+#workPage .badge {
+  font-size: 0.7rem;
+  padding: 0.3em 0.6em;
+  background-color: transparent;
+}
+
 /* ------------------------------------------------------ */
 
 #scrollUp {
