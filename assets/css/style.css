@@ -643,15 +643,17 @@ a:hover {
   font-size: 0.7rem;
   z-index: 2;
 }
+
 #workPage .dot-separator {
   color: #999;
-  margin: 0 0.3rem;
-  font-size: 0.65rem;
+  margin: 0 0.1rem;
+  font-size: 0.6rem;
   user-select: none;
 }
+
 #workPage .badge {
   font-size: 0.7rem;
-  padding: 0.3em 0.6em;
+  padding: 0.35em 0.6em;
   background-color: transparent;
 }
 

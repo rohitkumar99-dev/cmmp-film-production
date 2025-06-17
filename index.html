@@ -5,6 +5,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CrazyMoon Moving Pictures</title>
+    <!-- ✅ SEO JSON-LD Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "CrazyMoon Moving Pictures Pvt. Ltd.",
+        "url": "https://crazymoonmovingpictures.com",
+        "email": "sk@crazymoonmovingpictures.com",
+        "telephone": "+91 9920309401",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1603 BLDG NO1B TR47T/S, CTS NO43/A P/T PAHADI, Goregaon West",
+          "addressLocality": "Mumbai",
+          "addressRegion": "Maharashtra",
+          "postalCode": "400104",
+          "addressCountry": "IN"
+        }
+      }
+    </script>
+
     <meta
       name="description"
       content="CrazyMoon Moving Pictures is a creative film production house crafting cinematic experiences that captivate hearts and minds. Explore our films, stories, and more."
@@ -55,44 +75,81 @@
     />
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="https://crazymoonmovingpictures.com/assets/css/variables.css?v=1.17" />
-    <link rel="stylesheet" href="https://crazymoonmovingpictures.com/assets/css/preloader.css?v=1.17" />
-    <link rel="stylesheet" href="https://crazymoonmovingpictures.com/assets/css/class.css?v=1.17" />
-    <link rel="stylesheet" href="https://crazymoonmovingpictures.com/assets/css/splide.css?v=1.17" />
-    <link rel="stylesheet" href="https://crazymoonmovingpictures.com/assets/css/style.css?v=1.17" />
-    <link rel="stylesheet" href="https://crazymoonmovingpictures.com/assets/css/responsive.css?v=1.17" />
+    <link
+      rel="stylesheet"
+      href="https://crazymoonmovingpictures.com/assets/css/variables.css?v=1.17"
+    />
+    <link
+      rel="stylesheet"
+      href="https://crazymoonmovingpictures.com/assets/css/preloader.css?v=1.17"
+    />
+    <link
+      rel="stylesheet"
+      href="https://crazymoonmovingpictures.com/assets/css/class.css?v=1.17"
+    />
+    <link
+      rel="stylesheet"
+      href="https://crazymoonmovingpictures.com/assets/css/splide.css?v=1.17"
+    />
+    <link
+      rel="stylesheet"
+      href="https://crazymoonmovingpictures.com/assets/css/style.css?v=1.17"
+    />
+    <link
+      rel="stylesheet"
+      href="https://crazymoonmovingpictures.com/assets/css/responsive.css?v=1.17"
+    />
   </head>
   <body class="loading">
     <div id="preloader">
-        <div class="preloader">
-            <span></span>
-            <span></span>
-        </div>
+      <div class="preloader">
+        <span></span>
+        <span></span>
+      </div>
     </div>
-    <header id="header" class="fixed-top">
+    <header
+      id="header"
+      class="fixed-top"
+      itemscope
+      itemtype="https://schema.org/Organization"
+    >
+      <meta itemprop="name" content="CrazyMoon Moving Pictures Pvt. Ltd." />
+      <meta itemprop="url" content="https://crazymoonmovingpictures.com" />
+
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg bg-transparent">
+      <nav
+        class="navbar navbar-expand-lg bg-transparent"
+        role="navigation"
+        aria-label="Main navigation"
+      >
         <div class="container">
-          <a class="navbar-brand" href="https://crazymoonmovingpictures.com/">
+          <!-- Brand Logo -->
+          <a
+            class="navbar-brand"
+            href="https://crazymoonmovingpictures.com/"
+            itemprop="url"
+          >
             <img
               src="https://crazymoonmovingpictures.com/uploads/logo/crazy-moon-logo.webp"
               alt="CrazyMoon Logo"
               class="logo"
+              itemprop="logo"
             />
           </a>
 
-          <!-- Offcanvas Toggle for Mobile -->
+          <!-- Offcanvas Toggle -->
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
           </button>
 
-          <!-- Navbar Links -->
+          <!-- Offcanvas Navigation -->
           <div
             class="offcanvas offcanvas-lg offcanvas-end offcanvas-fullscreen"
             tabindex="-1"
@@ -101,7 +158,10 @@
           >
             <div class="offcanvas-header d-lg-none">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                <a class="navbar-brand" href="https://crazymoonmovingpictures.com/">
+                <a
+                  class="navbar-brand"
+                  href="https://crazymoonmovingpictures.com/"
+                >
                   <img
                     src="https://crazymoonmovingpictures.com/uploads/logo/crazy-moon-logo.webp"
                     alt="CrazyMoon Logo"
@@ -113,452 +173,1136 @@
                 type="button"
                 class="btn-close"
                 data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ><i class="bi bi-x-lg"></i></button>
+                aria-label="Close menu"
+              >
+                <i class="bi bi-x-lg"></i>
+              </button>
             </div>
+
             <div
               class="offcanvas-body d-lg-flex align-items-center justify-content-between w-100"
             >
+              <!-- Main Navigation -->
               <ul class="navbar-nav mx-lg-auto mb-4 mb-lg-0 gap-lg-4">
                 <li class="nav-item">
-                  <a class="nav-link" href="https://crazymoonmovingpictures.com/#ourStory">Our Story</a>
+                  <a
+                    class="nav-link"
+                    href="https://crazymoonmovingpictures.com/#ourStory"
+                    >Our Story</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="https://crazymoonmovingpictures.com/about/">About Us</a>
+                  <a
+                    class="nav-link"
+                    href="https://crazymoonmovingpictures.com/about/"
+                    >About Us</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="https://crazymoonmovingpictures.com/work/">Our Work</a>
+                  <a
+                    class="nav-link"
+                    href="https://crazymoonmovingpictures.com/work/"
+                    >Our Work</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="https://crazymoonmovingpictures.com/media/">Media Coverage</a>
+                  <a
+                    class="nav-link"
+                    href="https://crazymoonmovingpictures.com/media/"
+                    >Media Coverage</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="https://crazymoonmovingpictures.com/contact/">Contact Us</a>
+                  <a
+                    class="nav-link"
+                    href="https://crazymoonmovingpictures.com/contact/"
+                    >Contact Us</a
+                  >
                 </li>
               </ul>
             </div>
           </div>
 
-          <!-- Social Icons -->
+          <!-- Social Media Icons -->
           <div
-            class="social-icons d-none d-lg-flex justify-content-center gap-3 d-none"
+            class="social-icons d-none d-lg-flex justify-content-center gap-3"
+            aria-label="Social Media Links"
           >
-            <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
-            <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
-            <a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
-            <a href="#" target="_blank"><i class="bi bi-youtube"></i></a>
+            <a href="#" target="_blank" aria-label="Instagram"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="#" target="_blank" aria-label="Facebook"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="#" target="_blank" aria-label="Twitter"
+              ><i class="bi bi-twitter"></i
+            ></a>
+            <a href="#" target="_blank" aria-label="YouTube"
+              ><i class="bi bi-youtube"></i
+            ></a>
           </div>
         </div>
       </nav>
     </header>
 
-    <!-- Featured Movies Section -->
-    <section id="featured-image-carousel" class="splide" aria-label="Beautiful Images">
-      <div class="splide__track">
-        <ul class="splide__list">
-          
-          <li class="splide__slide">
-            <img
-              src="https://crazymoonmovingpictures.com/uploads/web-series/mawad-16x9.webp"
-              alt="Mawad"
-              class="featured-landscape-image"
-            />
-            <img
-              src="https://crazymoonmovingpictures.com/uploads/web-series/mawad-2x3.webp"
-              alt="Mawad"
-              class="featured-portrait-image"
-            />
-          </li>
+    <main>
+      <!-- Featured Movies Section -->
+      <section
+        id="featured-image-carousel"
+        class="splide"
+        aria-label="Featured Films from CrazyMoon"
+        itemscope
+        itemtype="https://schema.org/CollectionPage"
+      >
+        <meta itemprop="name" content="Featured Movies Carousel" />
+        <meta
+          itemprop="description"
+          content="Explore our cinematic gems—Mawad, Tonhislava, and The Transaction—each crafted with vision and storytelling brilliance."
+        />
 
-          <li class="splide__slide">
-            <img
-              src="https://crazymoonmovingpictures.com/uploads/web-series/tonhislava-16x9.webp"
-              alt="Tonhislava"
-              class="featured-landscape-image"
-            />
-            <img
-              src="https://crazymoonmovingpictures.com/uploads/web-series/tonhislava-2x3.webp"
-              alt="Tonhislava"
-              class="featured-portrait-image"
-            />
-          </li>
-          
-          <li class="splide__slide">
-            <img
-              src="https://crazymoonmovingpictures.com/uploads/movies/the-transaction-16x9.webp"
-              alt="Tonhislava - The Glory Of Tonhi"
-              class="featured-landscape-image"
-            />
-            <img
-              src="https://crazymoonmovingpictures.com/uploads/movies/the-transaction-2x3.webp"
-              alt="Tonhislava - The Glory Of Tonhi"
-              class="featured-portrait-image"
-            />
-          </li>
-    
-        </ul>
-      </div>
-    </section>
-
-    <!-- Our Story Section -->
-    <section id="ourStory" class="section">
-      <div class="stars">
-        <div class="star" style="top: 5%; left: 10%;"></div>
-        <div class="star" style="top: 10%; left: 20%;"></div>
-        <div class="star" style="top: 15%; left: 75%;"></div>
-        <div class="star" style="top: 25%; left: 70%;"></div>
-        <div class="star" style="top: 30%; left: 40%;"></div>
-        <div class="star" style="top: 35%; left: 85%;"></div>
-        <div class="star" style="top: 40%; left: 50%;"></div>
-        <div class="star" style="top: 45%; left: 15%;"></div>
-        <div class="star" style="top: 60%; left: 30%;"></div>
-        <div class="star" style="top: 65%; left: 65%;"></div>
-        <div class="star" style="top: 70%; left: 20%;"></div>
-        <div class="star" style="top: 80%; left: 80%;"></div>
-        <div class="star" style="top: 85%; left: 45%;"></div>
-        <div class="star" style="top: 90%; left: 10%;"></div>
-      </div>
-    
-      <div class="container">
-        <h2 class="heading text-start">Our Story</h2>
-        <div class="row align-items-center mt-4">
-          <div class="col-lg-6">
-            <p class="story-text">
-              We carry a legacy of professionalism and creative excellence in visual storytelling. Our curated team delivers high-quality, impactful content.
-            </p>
-            <p class="story-text">
-              We ideate, produce, collaborate, and craft world-class audiovisual experiences that captivate and inspire.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <div class="story-image">
-              <img
-                src="https://crazymoonmovingpictures.com/uploads/bts/08.webp"
-                alt="Our Story Image"
-                class="img-fluid"
+        <div class="splide__track">
+          <ul class="splide__list">
+            <!-- Mawad Slide -->
+            <li
+              class="splide__slide"
+              itemprop="hasPart"
+              itemscope
+              itemtype="https://schema.org/VideoObject"
+            >
+              <meta itemprop="name" content="Mawad" />
+              <meta
+                itemprop="thumbnailUrl"
+                content="https://crazymoonmovingpictures.com/uploads/web-series/mawad-16x9.webp"
               />
-            </div>
-          </div>
+              <img
+                src="https://crazymoonmovingpictures.com/uploads/web-series/mawad-16x9.webp"
+                alt="Mawad - Landscape Poster"
+                class="featured-landscape-image"
+                loading="lazy"
+                itemprop="thumbnail"
+              />
+              <img
+                src="https://crazymoonmovingpictures.com/uploads/web-series/mawad-2x3.webp"
+                alt="Mawad - Portrait Poster"
+                class="featured-portrait-image"
+                loading="lazy"
+              />
+            </li>
+
+            <!-- Tonhislava Slide -->
+            <li
+              class="splide__slide"
+              itemprop="hasPart"
+              itemscope
+              itemtype="https://schema.org/VideoObject"
+            >
+              <meta itemprop="name" content="Tonhislava - The Glory Of Tonhi" />
+              <meta
+                itemprop="thumbnailUrl"
+                content="https://crazymoonmovingpictures.com/uploads/web-series/tonhislava-16x9.webp"
+              />
+              <img
+                src="https://crazymoonmovingpictures.com/uploads/web-series/tonhislava-16x9.webp"
+                alt="Tonhislava - Landscape Poster"
+                class="featured-landscape-image"
+                loading="lazy"
+                itemprop="thumbnail"
+              />
+              <img
+                src="https://crazymoonmovingpictures.com/uploads/web-series/tonhislava-2x3.webp"
+                alt="Tonhislava - Portrait Poster"
+                class="featured-portrait-image"
+                loading="lazy"
+              />
+            </li>
+
+            <!-- The Transaction Slide -->
+            <li
+              class="splide__slide"
+              itemprop="hasPart"
+              itemscope
+              itemtype="https://schema.org/VideoObject"
+            >
+              <meta itemprop="name" content="The Transaction" />
+              <meta
+                itemprop="thumbnailUrl"
+                content="https://crazymoonmovingpictures.com/uploads/movies/the-transaction-16x9.webp"
+              />
+              <img
+                src="https://crazymoonmovingpictures.com/uploads/movies/the-transaction-16x9.webp"
+                alt="The Transaction - Landscape Poster"
+                class="featured-landscape-image"
+                loading="lazy"
+                itemprop="thumbnail"
+              />
+              <img
+                src="https://crazymoonmovingpictures.com/uploads/movies/the-transaction-2x3.webp"
+                alt="The Transaction - Portrait Poster"
+                class="featured-portrait-image"
+                loading="lazy"
+              />
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
-    
-    <!-- Upcoming & Released Movies Section -->
-    <section id="upcomingAndReleasedMovies" class="section">
-      <ul class="nav filter-nav justify-content-center position-relative" id="upcomingAndReleasedMoviesTabs">
-        <li class="nav-item">
-          <button class="nav-link active">All</button>
-        </li>
-        <li class="nav-item">
-          <button class="nav-link">Released</button>
-        </li>
-        <li class="nav-item">
-          <button class="nav-link">Upcoming</button>
-        </li>
-      </ul>
-    
-      <div class="container-fluid mt-4">
-        <div class="row g-3 justify-content-center id="galleryGrid">
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 gallery-item" data-category="Upcoming">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div class="shadow p-2 item rounded">
+      </section>
+
+      <!-- Our Story Section -->
+      <section
+        id="ourStory"
+        class="section"
+        itemscope
+        itemtype="https://schema.org/Organization"
+      >
+        <meta itemprop="name" content="CrazyMoon Moving Pictures Pvt. Ltd." />
+        <meta
+          itemprop="description"
+          content="We carry a legacy of professionalism and creative excellence in visual storytelling. Our team crafts world-class audiovisual experiences."
+        />
+
+        <!-- Twinkling Stars Background -->
+        <div class="stars" aria-hidden="true">
+          <div class="star" style="top: 5%; left: 10%"></div>
+          <div class="star" style="top: 10%; left: 20%"></div>
+          <div class="star" style="top: 15%; left: 75%"></div>
+          <div class="star" style="top: 25%; left: 70%"></div>
+          <div class="star" style="top: 30%; left: 40%"></div>
+          <div class="star" style="top: 35%; left: 85%"></div>
+          <div class="star" style="top: 40%; left: 50%"></div>
+          <div class="star" style="top: 45%; left: 15%"></div>
+          <div class="star" style="top: 60%; left: 30%"></div>
+          <div class="star" style="top: 65%; left: 65%"></div>
+          <div class="star" style="top: 70%; left: 20%"></div>
+          <div class="star" style="top: 80%; left: 80%"></div>
+          <div class="star" style="top: 85%; left: 45%"></div>
+          <div class="star" style="top: 90%; left: 10%"></div>
+        </div>
+
+        <!-- Story Content -->
+        <div class="container">
+          <h2 class="heading text-start" itemprop="headline">Our Story</h2>
+          <div class="row align-items-center mt-4">
+            <div class="col-lg-6">
+              <p class="story-text" itemprop="description">
+                We carry a legacy of professionalism and creative excellence in
+                visual storytelling. Our curated team delivers high-quality,
+                impactful content.
+              </p>
+              <p class="story-text">
+                We ideate, produce, collaborate, and craft world-class
+                audiovisual experiences that captivate and inspire.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="story-image"
+                itemprop="image"
+                itemscope
+                itemtype="https://schema.org/ImageObject"
+              >
+                <meta
+                  itemprop="contentUrl"
+                  content="https://crazymoonmovingpictures.com/uploads/bts/08.webp"
+                />
                 <img
-                  src="https://crazymoonmovingpictures.com/uploads/web-series/mawad-2x3.webp"
-                  alt="Mawad"
+                  src="https://crazymoonmovingpictures.com/uploads/bts/08.webp"
+                  alt="Behind the scenes glimpse at CrazyMoon Moving Pictures"
                   class="img-fluid"
+                  loading="lazy"
                 />
               </div>
-            </a>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 gallery-item" data-category="Upcoming">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div class="shadow p-2 item rounded">
-                <img
-                  src="https://crazymoonmovingpictures.com/uploads/web-series/tonhislava-2x3.webp"
-                  alt="Tonhislava - The Glory Of Tonhi"
-                  class="img-fluid"
-                />
-              </div>
-            </a>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 gallery-item" data-category="Upcoming">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div class="shadow p-2 item rounded">
-                <img
-                  src="https://crazymoonmovingpictures.com/uploads/movies/the-transaction-2x3.webp"
-                  alt="The Transaction"
-                  class="img-fluid"
-                />
-              </div>
-            </a>
-          </div>
-          
-        </div>
-      </div>
-      
-    </section>
-
-    <section id="bts" class="section py-5">
-      <div class="container">
-        <h2 class="heading text-start mt-0">BTS</h2>
-      </div>
-
-      <div class="container-fluid mb-3" style="margin-top: 40px">
-        <div class="row g-3">
-          <!-- Item 1 -->
-          <div class="col-12 col-md-6">
-            <div class="bts-item position-relative overflow-hidden">
-              <div class="bts-image">
-                <a href="https://crazymoonmovingpictures.com/uploads/bts/01.webp" data-fancybox="gallery" data-caption="The Transaction - Behind the Scenes 1">
-                  <img src="https://crazymoonmovingpictures.com/uploads/bts/01.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="">
-                  <div class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100">
-                    <i class="bi bi-play-circle fs-1 text-white"></i>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        
-          <!-- Item 2 -->
-          <div class="col-6 col-sm-6 col-md-3">
-            <div class="bts-item position-relative overflow-hidden">
-              <div class="bts-image">
-                <a href="https://crazymoonmovingpictures.com/uploads/bts/02.webp" data-fancybox="gallery" data-caption="The Transaction - Behind the Scenes 2">
-                  <img src="https://crazymoonmovingpictures.com/uploads/bts/02.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="">
-                  <div class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100">
-                    <i class="bi bi-play-circle fs-1 text-white"></i>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        
-          <!-- Item 3 -->
-          <div class="col-6 col-sm-6 col-md-3">
-            <div class="bts-item position-relative overflow-hidden">
-              <div class="bts-image">
-                <a href="https://crazymoonmovingpictures.com/uploads/bts/03.webp" data-fancybox="gallery" data-caption="The Transaction - Behind the Scenes 3">
-                  <img src="https://crazymoonmovingpictures.com/uploads/bts/03.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="">
-                  <div class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100">
-                    <i class="bi bi-play-circle fs-1 text-white"></i>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        
-          <!-- Item 4 -->
-          <div class="col-12 col-sm-6 col-md-4">
-            <div class="bts-item position-relative overflow-hidden">
-              <div class="bts-image">
-                <a href="https://crazymoonmovingpictures.com/uploads/bts/04.webp" data-fancybox="gallery" data-caption="The Transaction - Behind the Scenes 4">
-                  <img src="https://crazymoonmovingpictures.com/uploads/bts/04.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="">
-                  <div class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100">
-                    <i class="bi bi-play-circle fs-1 text-white"></i>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        
-          <!-- Item 5 -->
-          <div class="col-12 col-sm-6 col-md-4">
-            <div class="bts-item position-relative overflow-hidden">
-              <div class="bts-image">
-                <a href="https://crazymoonmovingpictures.com/uploads/bts/05.webp" data-fancybox="gallery" data-caption="The Transaction - Behind the Scenes 5">
-                  <img src="https://crazymoonmovingpictures.com/uploads/bts/05.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="">
-                  <div class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100">
-                    <i class="bi bi-play-circle fs-1 text-white"></i>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        
-          <!-- Item 6 -->
-          <div class="col-12 col-sm-6 col-md-4">
-            <div class="bts-item position-relative overflow-hidden">
-              <div class="bts-image">
-                <a href="https://crazymoonmovingpictures.com/uploads/bts/06.webp" data-fancybox="gallery" data-caption="The Transaction - Behind the Scenes 6">
-                  <img src="https://crazymoonmovingpictures.com/uploads/bts/06.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="">
-                  <div class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100">
-                    <i class="bi bi-play-circle fs-1 text-white"></i>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        
-          <!-- Item 7 -->
-          <div class="col-6 col-sm-6 col-md-3">
-            <div class="bts-item position-relative overflow-hidden">
-              <div class="bts-image">
-                <a href="https://crazymoonmovingpictures.com/uploads/bts/07.webp" data-fancybox="gallery" data-caption="The Transaction - Behind the Scenes 7">
-                  <img src="https://crazymoonmovingpictures.com/uploads/bts/07.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="">
-                  <div class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100">
-                    <i class="bi bi-play-circle fs-1 text-white"></i>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        
-          <!-- Item 8 -->
-          <div class="col-6 col-sm-6 col-md-3">
-            <div class="bts-item position-relative overflow-hidden">
-              <div class="bts-image">
-                <a href="https://crazymoonmovingpictures.com/uploads/bts/08.webp" data-fancybox="gallery" data-caption="The Transaction - Behind the Scenes 8">
-                  <img src="https://crazymoonmovingpictures.com/uploads/bts/08.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="">
-                  <div class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100">
-                    <i class="bi bi-play-circle fs-1 text-white"></i>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        
-          <!-- Item 9 -->
-          <div class="col-6 col-sm-6 col-md-3">
-            <div class="bts-item position-relative overflow-hidden">
-              <div class="bts-image">
-                <a href="https://crazymoonmovingpictures.com/uploads/bts/09.webp" data-fancybox="gallery" data-caption="The Transaction - Behind the Scenes 9">
-                  <img src="https://crazymoonmovingpictures.com/uploads/bts/09.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="">
-                  <div class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100">
-                    <i class="bi bi-play-circle fs-1 text-white"></i>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        
-          <!-- Item 10 -->
-          <div class="col-6 col-sm-6 col-md-3">
-            <div class="bts-item position-relative overflow-hidden">
-              <div class="bts-image">
-                <a href="https://crazymoonmovingpictures.com/uploads/bts/10.webp" data-fancybox="gallery" data-caption="The Transaction - Behind the Scenes 10">
-                  <img src="https://crazymoonmovingpictures.com/uploads/bts/10.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="">
-                  <div class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100">
-                    <i class="bi bi-play-circle fs-1 text-white"></i>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        
-          <!-- Item 11 -->
-          <div class="col-12 col-md-6">
-            <div class="bts-item position-relative overflow-hidden">
-              <div class="bts-image">
-                <a href="https://crazymoonmovingpictures.com/uploads/bts/11.webp" data-fancybox="gallery" data-caption="The Transaction - Behind the Scenes 11">
-                  <img src="https://crazymoonmovingpictures.com/uploads/bts/11.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="">
-                  <div class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100">
-                    <i class="bi bi-play-circle fs-1 text-white"></i>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        
-          <!-- Item 12 -->
-          <div class="col-12 col-md-6">
-            <div class="bts-item position-relative overflow-hidden">
-              <div class="bts-image">
-                <a href="https://crazymoonmovingpictures.com/uploads/bts/12.webp" data-fancybox="gallery" data-caption="The Transaction - Behind the Scenes 12">
-                  <img src="https://crazymoonmovingpictures.com/uploads/bts/12.webp" class="img-fluid w-100 h-100 object-fit-cover" alt="">
-                  <div class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100">
-                    <i class="bi bi-play-circle fs-1 text-white"></i>
-                  </div>
-                </a>
-              </div>
             </div>
           </div>
         </div>
-        
-        <!-- Fancybox Bind (Optional for custom settings) -->
-        <script>
-          Fancybox.bind("[data-fancybox='gallery']");
-        </script>
-      </div>
-      
-    </section>
+      </section>
 
-    <!-- On The Map Section -->
-    <section id="onTheMap" class="section">
-      <div class="container">
-        <h2 class="heading text-end mb-4">On The Map</h2>
-        <div class="row g-3">
-          <div class="col-md-6">
-            <div class="gmap">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.702190141665!2d72.83687450971921!3d19.164509081983514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6507b91d803%3A0xf5b0a936c50c694c!2sSunrise%20Tower!5e0!3m2!1sen!2sin!4v1749816864152!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- Upcoming & Released Movies And Webseries Section -->
+      <section
+        id="upcomingAndReleasedMovies"
+        class="section"
+        aria-labelledby="mediaShowcaseTitle"
+      >
+        <h2 id="mediaShowcaseTitle" class="visually-hidden">
+          Upcoming & Released Movies and Webseries
+        </h2>
+
+        <!-- Filter Navigation -->
+        <ul
+          class="nav filter-nav justify-content-center position-relative"
+          id="upcomingAndReleasedMoviesTabs"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              data-filter="all"
+              role="tab"
+              aria-selected="true"
+            >
+              All
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              data-filter="Released"
+              role="tab"
+              aria-selected="false"
+            >
+              Released
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              data-filter="Upcoming"
+              role="tab"
+              aria-selected="false"
+            >
+              Upcoming
+            </button>
+          </li>
+        </ul>
+
+        <!-- Gallery Grid -->
+        <div class="container-fluid mt-4">
+          <div
+            class="row g-3 justify-content-center"
+            id="galleryGrid"
+            itemscope
+            itemtype="https://schema.org/ItemList"
+          >
+            <!-- Mawad -->
+            <div
+              class="col-6 col-sm-4 col-md-3 col-lg-2 gallery-item"
+              data-category="Upcoming"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/VideoObject"
+            >
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                itemprop="url"
+              >
+                <div class="shadow p-2 item rounded">
+                  <img
+                    src="https://crazymoonmovingpictures.com/uploads/web-series/mawad-2x3.webp"
+                    alt="Mawad Poster"
+                    class="img-fluid"
+                    loading="lazy"
+                    itemprop="thumbnailUrl"
+                  />
+                  <meta itemprop="name" content="Mawad" />
+                  <meta
+                    itemprop="description"
+                    content="An upcoming webseries by CrazyMoon Moving Pictures."
+                  />
+                </div>
+              </a>
+            </div>
+
+            <!-- Tonhislava -->
+            <div
+              class="col-6 col-sm-4 col-md-3 col-lg-2 gallery-item"
+              data-category="Upcoming"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/VideoObject"
+            >
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                itemprop="url"
+              >
+                <div class="shadow p-2 item rounded">
+                  <img
+                    src="https://crazymoonmovingpictures.com/uploads/web-series/tonhislava-2x3.webp"
+                    alt="Tonhislava - The Glory Of Tonhi Poster"
+                    class="img-fluid"
+                    loading="lazy"
+                    itemprop="thumbnailUrl"
+                  />
+                  <meta
+                    itemprop="name"
+                    content="Tonhislava - The Glory Of Tonhi"
+                  />
+                  <meta
+                    itemprop="description"
+                    content="An upcoming mystical drama exploring ancient rituals."
+                  />
+                </div>
+              </a>
+            </div>
+
+            <!-- The Transaction -->
+            <div
+              class="col-6 col-sm-4 col-md-3 col-lg-2 gallery-item"
+              data-category="Upcoming"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/VideoObject"
+            >
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                itemprop="url"
+              >
+                <div class="shadow p-2 item rounded">
+                  <img
+                    src="https://crazymoonmovingpictures.com/uploads/movies/the-transaction-2x3.webp"
+                    alt="The Transaction Poster"
+                    class="img-fluid"
+                    loading="lazy"
+                    itemprop="thumbnailUrl"
+                  />
+                  <meta itemprop="name" content="The Transaction" />
+                  <meta
+                    itemprop="description"
+                    content="An upcoming gripping tale of consequences and crime."
+                  />
+                </div>
+              </a>
             </div>
           </div>
-          <div class="col-md-6">
-            <h5>Our Address</h5>
-            <ul class="contact-list list-unstyled mt-md-3 mb-4">
-              <li>
-                <i class="bi bi-geo-alt-fill"></i>
-                <div class="contact-details">
-                  <div class="company">CrazyMoon Moving Pictures Pvt. Ltd.</div>
-                <div class="address">1603 BLDG NO1B TR47T/S, CTS NO43/A P/T PAHADI, Goregaon West, Mumbai, Maharashtra - 400104, India</div>
-                </div>
-              </li>
-            </ul>
-            <h5>Our Contacts</h5>
-            <ul class="contact-list list-unstyled mt-md-3">
-              <li>
-                <i class="bi bi-envelope-fill"></i>
-                <div class="contact-details">
-                  <a href="mailto:sk@crazymoonmovingpictures.com">sk@crazymoonmovingpictures.com</a>
-                  <a href="mailto:crazymoonmp@gmail.com">crazymoonmp@gmail.com</a>
-                </div>
-              </li>
-              <li>
-                <i class="bi bi-telephone-fill"></i>
-                <div class="contact-details">
-                  <a href="tel:+919920309401">+91 9920309401</a>
-                  <a href="tel:+917021064966">+91 7021064966</a>
-                </div>
-              </li>
-            </ul>
-            
-          </div>                    
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- BTS Section -->
+      <section id="bts" class="section py-5" aria-labelledby="btsHeading">
+        <div class="container">
+          <h2 id="btsHeading" class="heading text-start mt-0">
+            Behind The Scenes
+          </h2>
+          <meta
+            itemprop="description"
+            content="A glimpse behind the curtain of CrazyMoon’s creative process, featuring stills and moments from sets."
+          />
+        </div>
+
+        <div
+          class="container-fluid mb-3 mt-4"
+          itemscope
+          itemtype="https://schema.org/ItemList"
+        >
+          <meta itemprop="name" content="Behind the Scenes Gallery" />
+          <div class="row g-3">
+            <!-- Item 1 -->
+            <div
+              class="col-12 col-md-6"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
+              <div class="bts-item position-relative overflow-hidden">
+                <div class="bts-image">
+                  <a
+                    href="https://crazymoonmovingpictures.com/uploads/bts/01.webp"
+                    data-fancybox="gallery"
+                    data-caption="The Transaction - Behind the Scenes 1"
+                    itemprop="contentUrl"
+                  >
+                    <img
+                      src="https://crazymoonmovingpictures.com/uploads/bts/01.webp"
+                      class="img-fluid w-100 h-100 object-fit-cover"
+                      alt="The Transaction - BTS Image 1"
+                      loading="lazy"
+                      itemprop="thumbnailUrl"
+                    />
+                    <meta
+                      itemprop="name"
+                      content="The Transaction - Behind the Scenes 1"
+                    />
+                    <meta
+                      itemprop="description"
+                      content="Captured moments from the set of 'The Transaction'."
+                    />
+                    <div
+                      class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100"
+                    >
+                      <i
+                        class="bi bi-play-circle fs-1 text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div
+              class="col-6 col-sm-6 col-md-3"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
+              <div class="bts-item position-relative overflow-hidden">
+                <div class="bts-image">
+                  <a
+                    href="https://crazymoonmovingpictures.com/uploads/bts/02.webp"
+                    data-fancybox="gallery"
+                    data-caption="The Transaction - Behind the Scenes 2"
+                    itemprop="contentUrl"
+                  >
+                    <img
+                      src="https://crazymoonmovingpictures.com/uploads/bts/02.webp"
+                      class="img-fluid w-100 h-100 object-fit-cover"
+                      alt="The Transaction - BTS Image 2"
+                      loading="lazy"
+                      itemprop="thumbnailUrl"
+                    />
+                    <meta
+                      itemprop="name"
+                      content="The Transaction - Behind the Scenes 2"
+                    />
+                    <meta
+                      itemprop="description"
+                      content="Captured moments from the set of 'The Transaction'."
+                    />
+                    <div
+                      class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100"
+                    >
+                      <i
+                        class="bi bi-play-circle fs-1 text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div
+              class="col-6 col-sm-6 col-md-3"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
+              <div class="bts-item position-relative overflow-hidden">
+                <div class="bts-image">
+                  <a
+                    href="https://crazymoonmovingpictures.com/uploads/bts/03.webp"
+                    data-fancybox="gallery"
+                    data-caption="The Transaction - Behind the Scenes 3"
+                    itemprop="contentUrl"
+                  >
+                    <img
+                      src="https://crazymoonmovingpictures.com/uploads/bts/03.webp"
+                      class="img-fluid w-100 h-100 object-fit-cover"
+                      alt="The Transaction - BTS Image 3"
+                      loading="lazy"
+                      itemprop="thumbnailUrl"
+                    />
+                    <meta
+                      itemprop="name"
+                      content="The Transaction - Behind the Scenes 3"
+                    />
+                    <meta
+                      itemprop="description"
+                      content="Captured moments from the set of 'The Transaction'."
+                    />
+                    <div
+                      class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100"
+                    >
+                      <i
+                        class="bi bi-play-circle fs-1 text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div
+              class="col-12 col-sm-6 col-md-4"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
+              <div class="bts-item position-relative overflow-hidden">
+                <div class="bts-image">
+                  <a
+                    href="https://crazymoonmovingpictures.com/uploads/bts/04.webp"
+                    data-fancybox="gallery"
+                    data-caption="The Transaction - Behind the Scenes 4"
+                    itemprop="contentUrl"
+                  >
+                    <img
+                      src="https://crazymoonmovingpictures.com/uploads/bts/04.webp"
+                      class="img-fluid w-100 h-100 object-fit-cover"
+                      alt="The Transaction - BTS Image 4"
+                      loading="lazy"
+                      itemprop="thumbnailUrl"
+                    />
+                    <meta
+                      itemprop="name"
+                      content="The Transaction - Behind the Scenes 4"
+                    />
+                    <meta
+                      itemprop="description"
+                      content="Captured moments from the set of 'The Transaction'."
+                    />
+                    <div
+                      class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100"
+                    >
+                      <i
+                        class="bi bi-play-circle fs-1 text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div
+              class="col-12 col-sm-6 col-md-4"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
+              <div class="bts-item position-relative overflow-hidden">
+                <div class="bts-image">
+                  <a
+                    href="https://crazymoonmovingpictures.com/uploads/bts/05.webp"
+                    data-fancybox="gallery"
+                    data-caption="The Transaction - Behind the Scenes 5"
+                    itemprop="contentUrl"
+                  >
+                    <img
+                      src="https://crazymoonmovingpictures.com/uploads/bts/05.webp"
+                      class="img-fluid w-100 h-100 object-fit-cover"
+                      alt="The Transaction - BTS Image 5"
+                      loading="lazy"
+                      itemprop="thumbnailUrl"
+                    />
+                    <meta
+                      itemprop="name"
+                      content="The Transaction - Behind the Scenes 5"
+                    />
+                    <meta
+                      itemprop="description"
+                      content="Captured moments from the set of 'The Transaction'."
+                    />
+                    <div
+                      class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100"
+                    >
+                      <i
+                        class="bi bi-play-circle fs-1 text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div
+              class="col-12 col-sm-6 col-md-4"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
+              <div class="bts-item position-relative overflow-hidden">
+                <div class="bts-image">
+                  <a
+                    href="https://crazymoonmovingpictures.com/uploads/bts/06.webp"
+                    data-fancybox="gallery"
+                    data-caption="The Transaction - Behind the Scenes 6"
+                    itemprop="contentUrl"
+                  >
+                    <img
+                      src="https://crazymoonmovingpictures.com/uploads/bts/06.webp"
+                      class="img-fluid w-100 h-100 object-fit-cover"
+                      alt="The Transaction - BTS Image 6"
+                      loading="lazy"
+                      itemprop="thumbnailUrl"
+                    />
+                    <meta
+                      itemprop="name"
+                      content="The Transaction - Behind the Scenes 6"
+                    />
+                    <meta
+                      itemprop="description"
+                      content="Captured moments from the set of 'The Transaction'."
+                    />
+                    <div
+                      class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100"
+                    >
+                      <i
+                        class="bi bi-play-circle fs-1 text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 7 -->
+            <div
+              class="col-6 col-sm-6 col-md-3"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
+              <div class="bts-item position-relative overflow-hidden">
+                <div class="bts-image">
+                  <a
+                    href="https://crazymoonmovingpictures.com/uploads/bts/07.webp"
+                    data-fancybox="gallery"
+                    data-caption="The Transaction - Behind the Scenes 7"
+                    itemprop="contentUrl"
+                  >
+                    <img
+                      src="https://crazymoonmovingpictures.com/uploads/bts/07.webp"
+                      class="img-fluid w-100 h-100 object-fit-cover"
+                      alt="The Transaction - BTS Image 7"
+                      loading="lazy"
+                      itemprop="thumbnailUrl"
+                    />
+                    <meta
+                      itemprop="name"
+                      content="The Transaction - Behind the Scenes 7"
+                    />
+                    <meta
+                      itemprop="description"
+                      content="Captured moments from the set of 'The Transaction'."
+                    />
+                    <div
+                      class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100"
+                    >
+                      <i
+                        class="bi bi-play-circle fs-1 text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 8 -->
+            <div
+              class="col-6 col-sm-6 col-md-3"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
+              <div class="bts-item position-relative overflow-hidden">
+                <div class="bts-image">
+                  <a
+                    href="https://crazymoonmovingpictures.com/uploads/bts/08.webp"
+                    data-fancybox="gallery"
+                    data-caption="The Transaction - Behind the Scenes 8"
+                    itemprop="contentUrl"
+                  >
+                    <img
+                      src="https://crazymoonmovingpictures.com/uploads/bts/08.webp"
+                      class="img-fluid w-100 h-100 object-fit-cover"
+                      alt="The Transaction - BTS Image 8"
+                      loading="lazy"
+                      itemprop="thumbnailUrl"
+                    />
+                    <meta
+                      itemprop="name"
+                      content="The Transaction - Behind the Scenes 8"
+                    />
+                    <meta
+                      itemprop="description"
+                      content="Captured moments from the set of 'The Transaction'."
+                    />
+                    <div
+                      class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100"
+                    >
+                      <i
+                        class="bi bi-play-circle fs-1 text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 9 -->
+            <div
+              class="col-6 col-sm-6 col-md-3"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
+              <div class="bts-item position-relative overflow-hidden">
+                <div class="bts-image">
+                  <a
+                    href="https://crazymoonmovingpictures.com/uploads/bts/09.webp"
+                    data-fancybox="gallery"
+                    data-caption="The Transaction - Behind the Scenes 9"
+                    itemprop="contentUrl"
+                  >
+                    <img
+                      src="https://crazymoonmovingpictures.com/uploads/bts/09.webp"
+                      class="img-fluid w-100 h-100 object-fit-cover"
+                      alt="The Transaction - BTS Image 9"
+                      loading="lazy"
+                      itemprop="thumbnailUrl"
+                    />
+                    <meta
+                      itemprop="name"
+                      content="The Transaction - Behind the Scenes 9"
+                    />
+                    <meta
+                      itemprop="description"
+                      content="Captured moments from the set of 'The Transaction'."
+                    />
+                    <div
+                      class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100"
+                    >
+                      <i
+                        class="bi bi-play-circle fs-1 text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 10 -->
+            <div
+              class="col-6 col-sm-6 col-md-3"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
+              <div class="bts-item position-relative overflow-hidden">
+                <div class="bts-image">
+                  <a
+                    href="https://crazymoonmovingpictures.com/uploads/bts/10.webp"
+                    data-fancybox="gallery"
+                    data-caption="The Transaction - Behind the Scenes 10"
+                    itemprop="contentUrl"
+                  >
+                    <img
+                      src="https://crazymoonmovingpictures.com/uploads/bts/10.webp"
+                      class="img-fluid w-100 h-100 object-fit-cover"
+                      alt="The Transaction - BTS Image 10"
+                      loading="lazy"
+                      itemprop="thumbnailUrl"
+                    />
+                    <meta
+                      itemprop="name"
+                      content="The Transaction - Behind the Scenes 10"
+                    />
+                    <meta
+                      itemprop="description"
+                      content="Captured moments from the set of 'The Transaction'."
+                    />
+                    <div
+                      class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100"
+                    >
+                      <i
+                        class="bi bi-play-circle fs-1 text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 11 -->
+            <div
+              class="col-12 col-md-6"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
+              <div class="bts-item position-relative overflow-hidden">
+                <div class="bts-image">
+                  <a
+                    href="https://crazymoonmovingpictures.com/uploads/bts/11.webp"
+                    data-fancybox="gallery"
+                    data-caption="The Transaction - Behind the Scenes 11"
+                    itemprop="contentUrl"
+                  >
+                    <img
+                      src="https://crazymoonmovingpictures.com/uploads/bts/11.webp"
+                      class="img-fluid w-100 h-100 object-fit-cover"
+                      alt="The Transaction - BTS Image 11"
+                      loading="lazy"
+                      itemprop="thumbnailUrl"
+                    />
+                    <meta
+                      itemprop="name"
+                      content="The Transaction - Behind the Scenes 11"
+                    />
+                    <meta
+                      itemprop="description"
+                      content="Captured moments from the set of 'The Transaction'."
+                    />
+                    <div
+                      class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100"
+                    >
+                      <i
+                        class="bi bi-play-circle fs-1 text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 12 -->
+            <div
+              class="col-12 col-md-6"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ImageObject"
+            >
+              <div class="bts-item position-relative overflow-hidden">
+                <div class="bts-image">
+                  <a
+                    href="https://crazymoonmovingpictures.com/uploads/bts/12.webp"
+                    data-fancybox="gallery"
+                    data-caption="The Transaction - Behind the Scenes 12"
+                    itemprop="contentUrl"
+                  >
+                    <img
+                      src="https://crazymoonmovingpictures.com/uploads/bts/12.webp"
+                      class="img-fluid w-100 h-100 object-fit-cover"
+                      alt="The Transaction - BTS Image 12"
+                      loading="lazy"
+                      itemprop="thumbnailUrl"
+                    />
+                    <meta
+                      itemprop="name"
+                      content="The Transaction - Behind the Scenes 12"
+                    />
+                    <meta
+                      itemprop="description"
+                      content="Captured moments from the set of 'The Transaction'."
+                    />
+                    <div
+                      class="bts-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100"
+                    >
+                      <i
+                        class="bi bi-play-circle fs-1 text-white"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fancybox Script (initialized only if not globally called elsewhere) -->
+          <script>
+            Fancybox.bind("[data-fancybox='gallery']");
+          </script>
+        </div>
+      </section>
+
+      <!-- On The Map Section -->
+      <section
+        id="onTheMap"
+        class="section"
+        itemscope
+        itemtype="https://schema.org/Organization"
+      >
+        <meta itemprop="name" content="CrazyMoon Moving Pictures Pvt. Ltd." />
+        <meta
+          itemprop="address"
+          content="1603 BLDG NO1B TR47T/S, CTS NO43/A P/T PAHADI, Goregaon West, Mumbai, Maharashtra - 400104, India"
+        />
+        <meta itemprop="telephone" content="+919920309401" />
+        <meta itemprop="telephone" content="+917021064966" />
+        <meta itemprop="email" content="sk@crazymoonmovingpictures.com" />
+        <meta itemprop="email" content="crazymoonmp@gmail.com" />
+
+        <div class="container">
+          <h2 class="heading text-end mb-4">On The Map</h2>
+          <div class="row g-3">
+            <!-- Google Map Embed -->
+            <div class="col-md-6">
+              <div class="gmap" aria-label="Our Location on Map">
+                <iframe
+                  title="CrazyMoon Moving Pictures Location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.702190141665!2d72.83687450971921!3d19.164509081983514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6507b91d803%3A0xf5b0a936c50c694c!2sSunrise%20Tower!5e0!3m2!1sen!2sin!4v1749816864152!5m2!1sen!2sin"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-md-6">
+              <h3 class="h5">Our Address</h3>
+              <ul class="contact-list list-unstyled mt-md-3 mb-4">
+                <li
+                  itemprop="address"
+                  itemscope
+                  itemtype="https://schema.org/PostalAddress"
+                >
+                  <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                  <div class="contact-details">
+                    <div class="company" itemprop="name">
+                      CrazyMoon Moving Pictures Pvt. Ltd.
+                    </div>
+                    <div class="address" itemprop="streetAddress">
+                      1603 BLDG NO1B TR47T/S, CTS NO43/A P/T PAHADI, Goregaon
+                      West,<br />
+                      <span itemprop="addressLocality">Mumbai</span>,
+                      <span itemprop="addressRegion">Maharashtra</span> -
+                      <span itemprop="postalCode">400104</span>,
+                      <span itemprop="addressCountry">India</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <h3 class="h5">Our Contacts</h3>
+              <ul class="contact-list list-unstyled mt-md-3">
+                <li>
+                  <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                  <div class="contact-details">
+                    <a
+                      href="mailto:sk@crazymoonmovingpictures.com"
+                      itemprop="email"
+                      >sk@crazymoonmovingpictures.com</a
+                    >
+                    <a href="mailto:crazymoonmp@gmail.com" itemprop="email"
+                      >crazymoonmp@gmail.com</a
+                    >
+                  </div>
+                </li>
+                <li>
+                  <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                  <div class="contact-details">
+                    <a href="tel:+919920309401" itemprop="telephone"
+                      >+91 9920309401</a
+                    >
+                    <a href="tel:+917021064966" itemprop="telephone"
+                      >+91 7021064966</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer mt-auto bg-dark text-light py-4">
+    <footer
+      class="footer mt-auto bg-dark text-light py-4"
+      itemscope
+      itemtype="https://schema.org/WPFooter"
+    >
       <div class="container">
         <div class="row text-center text-md-start align-items-center">
+          <!-- Legal Links & Copyright -->
           <div class="col-md-4 mb-3 mb-md-0">
             <ul class="list-inline mb-2">
               <li class="list-inline-item">
-                <a href="#" class="text-decoration-none text-light">Privacy Policy</a>
+                <a
+                  href="/privacy-policy"
+                  class="text-decoration-none text-light"
+                  rel="nofollow"
+                  >Privacy Policy</a
+                >
               </li>
-              <li class="list-inline-item">|</li>
+              <li class="list-inline-item" aria-hidden="true">|</li>
               <li class="list-inline-item">
-                <a href="#" class="text-decoration-none text-light">Disclaimer</a>
+                <a
+                  href="/disclaimer"
+                  class="text-decoration-none text-light"
+                  rel="nofollow"
+                  >Disclaimer</a
+                >
               </li>
             </ul>
-            <p class="mb-0 small">Copyright &copy; <span id="year"></span> CrazyMoon Moving Pictures Pvt. Ltd.</p>
+            <p class="mb-0 small">
+              &copy; <span id="year"></span>
+              <span itemprop="copyrightHolder"
+                >CrazyMoon Moving Pictures Pvt. Ltd.</span
+              >
+            </p>
           </div>
-    
-          <div class="col-md-4 mb-3 mb-md-0 text-center">
-            <a href="https://facebook.com" class="text-light me-3" target="_blank"><i class="bi bi-facebook fs-5"></i></a>
-            <a href="https://twitter.com" class="text-light me-3" target="_blank"><i class="bi bi-twitter-x fs-5"></i></a>
-            <a href="https://instagram.com" class="text-light me-3" target="_blank"><i class="bi bi-instagram fs-5"></i></a>
-            <a href="https://linkedin.com" class="text-light" target="_blank"><i class="bi bi-linkedin fs-5"></i></a>
+
+          <!-- Social Media Links -->
+          <div
+            class="col-md-4 mb-3 mb-md-0 text-center"
+            aria-label="Social Media Links"
+          >
+            <a
+              href="https://facebook.com"
+              class="text-light me-3"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook"
+            >
+              <i class="bi bi-facebook fs-5"></i>
+            </a>
+            <a
+              href="https://twitter.com"
+              class="text-light me-3"
+              target="_blank"
+              rel="noopener"
+              aria-label="Twitter"
+            >
+              <i class="bi bi-twitter-x fs-5"></i>
+            </a>
+            <a
+              href="https://instagram.com"
+              class="text-light me-3"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+            >
+              <i class="bi bi-instagram fs-5"></i>
+            </a>
+            <a
+              href="https://linkedin.com"
+              class="text-light"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+            >
+              <i class="bi bi-linkedin fs-5"></i>
+            </a>
           </div>
-    
+
+          <!-- Credits -->
           <div class="col-md-4 text-md-end">
-            <p class="mb-0 small">Designed & Developed with ❤️ by <strong>SK Software Solutions</strong></p>
+            <p class="mb-0 small">
+              Designed & Developed with <span aria-hidden="true">❤️</span> by
+              <strong
+                ><span itemprop="creator">SK Software Solutions</span></strong
+              >
+            </p>
           </div>
         </div>
       </div>
     </footer>
 
-    <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647;"><i class="bi bi-arrow-bar-up"></i></a>
-    
+    <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647"
+      ><i class="bi bi-arrow-bar-up"></i
+    ></a>
+
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
@@ -567,11 +1311,10 @@
 
     <!-- Plugins -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    
+
     <!-- Custom Scripts -->
     <script src="https://crazymoonmovingpictures.com/assets/js/main.js?v=1.17"></script>
     <script src="https://crazymoonmovingpictures.com/assets/js/splide.js?v=1.17"></script>
     <script src="https://crazymoonmovingpictures.com/assets/js/filter-movies.js?v=1.17"></script>
-    
   </body>
 </html>
