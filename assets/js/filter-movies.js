@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
   const navTabs = document.getElementById("upcomingAndReleasedMoviesTabs");
   const tabButtons = navTabs.querySelectorAll(".nav-link");
   const galleryItems = document.querySelectorAll(".gallery-item");
@@ -22,21 +22,16 @@ document.addEventListener("DOMContentLoaded", () => {
       if (match) {
         item.classList.remove("hide");
         item.style.display = "block";
-
-        // Reflow trick
         void item.offsetWidth;
-
         item.style.opacity = "1";
         item.style.transform = "scale(1)";
       } else {
         item.classList.add("hide");
         item.style.opacity = "0";
         item.style.transform = "scale(0.85)";
-
-        // Hide after transition
         setTimeout(() => {
           item.style.display = "none";
-        }, 500); // Match transition duration
+        }, 500);
       }
     });
   };
