@@ -312,6 +312,28 @@ a:hover {
   height: 100%;
 }
 
+#upcomingAndReleasedMovies .item {
+  position: relative;
+  overflow: hidden;
+}
+
+#upcomingAndReleasedMovies .release-date {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.4rem 0.6rem;
+  text-align: center;
+  transition: bottom 0.3s ease-in-out;
+}
+
+#upcomingAndReleasedMovies .item:hover .release-date {
+  bottom: 0;
+}
+
 /* --------------------------------------------------------------- */
 
 /* ------------------------------------------------------------------------ */
