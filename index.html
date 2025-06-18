@@ -77,27 +77,27 @@
     <!-- Custom Styles -->
     <link
       rel="stylesheet"
-      href="https://crazymoonmovingpictures.com/assets/css/variables.css?v=1.17"
+      href="https://crazymoonmovingpictures.com/assets/css/variables.css?v=1.18"
     />
     <link
       rel="stylesheet"
-      href="https://crazymoonmovingpictures.com/assets/css/preloader.css?v=1.17"
+      href="https://crazymoonmovingpictures.com/assets/css/preloader.css?v=1.18"
     />
     <link
       rel="stylesheet"
-      href="https://crazymoonmovingpictures.com/assets/css/class.css?v=1.17"
+      href="https://crazymoonmovingpictures.com/assets/css/class.css?v=1.18"
     />
     <link
       rel="stylesheet"
-      href="https://crazymoonmovingpictures.com/assets/css/splide.css?v=1.17"
+      href="https://crazymoonmovingpictures.com/assets/css/splide.css?v=1.18"
     />
     <link
       rel="stylesheet"
-      href="https://crazymoonmovingpictures.com/assets/css/style.css?v=1.17"
+      href="https://crazymoonmovingpictures.com/assets/css/style.css?v=1.18"
     />
     <link
       rel="stylesheet"
-      href="https://crazymoonmovingpictures.com/assets/css/responsive.css?v=1.17"
+      href="https://crazymoonmovingpictures.com/assets/css/responsive.css?v=1.18"
     />
   </head>
   <body class="loading">
@@ -262,6 +262,33 @@
 
         <div class="splide__track">
           <ul class="splide__list">
+            <!-- The Transaction Slide -->
+            <li
+              class="splide__slide"
+              itemprop="hasPart"
+              itemscope
+              itemtype="https://schema.org/VideoObject"
+            >
+              <meta itemprop="name" content="The Transaction" />
+              <meta
+                itemprop="thumbnailUrl"
+                content="https://crazymoonmovingpictures.com/uploads/movies/the-transaction-16x9.webp"
+              />
+              <img
+                src="https://crazymoonmovingpictures.com/uploads/movies/the-transaction-16x9.webp"
+                alt="The Transaction - Landscape Poster"
+                class="featured-landscape-image"
+                loading="lazy"
+                itemprop="thumbnail"
+              />
+              <img
+                src="https://crazymoonmovingpictures.com/uploads/movies/the-transaction-2x3.webp"
+                alt="The Transaction - Portrait Poster"
+                class="featured-portrait-image"
+                loading="lazy"
+              />
+            </li>
+
             <!-- Mawad Slide -->
             <li
               class="splide__slide"
@@ -311,33 +338,6 @@
               <img
                 src="https://crazymoonmovingpictures.com/uploads/web-series/tonhislava-2x3.webp"
                 alt="Tonhislava - Portrait Poster"
-                class="featured-portrait-image"
-                loading="lazy"
-              />
-            </li>
-
-            <!-- The Transaction Slide -->
-            <li
-              class="splide__slide"
-              itemprop="hasPart"
-              itemscope
-              itemtype="https://schema.org/VideoObject"
-            >
-              <meta itemprop="name" content="The Transaction" />
-              <meta
-                itemprop="thumbnailUrl"
-                content="https://crazymoonmovingpictures.com/uploads/movies/the-transaction-16x9.webp"
-              />
-              <img
-                src="https://crazymoonmovingpictures.com/uploads/movies/the-transaction-16x9.webp"
-                alt="The Transaction - Landscape Poster"
-                class="featured-landscape-image"
-                loading="lazy"
-                itemprop="thumbnail"
-              />
-              <img
-                src="https://crazymoonmovingpictures.com/uploads/movies/the-transaction-2x3.webp"
-                alt="The Transaction - Portrait Poster"
                 class="featured-portrait-image"
                 loading="lazy"
               />
@@ -471,6 +471,38 @@
             itemscope
             itemtype="https://schema.org/ItemList"
           >
+            <!-- The Transaction -->
+            <div
+              class="col-6 col-sm-4 col-md-3 col-lg-2 gallery-item"
+              data-category="Upcoming"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/VideoObject"
+            >
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                itemprop="url"
+              >
+                <div class="shadow-sm item rounded">
+                  <img
+                    src="https://crazymoonmovingpictures.com/uploads/movies/the-transaction-2x3.webp"
+                    alt="The Transaction Poster"
+                    class="img-fluid"
+                    loading="lazy"
+                    itemprop="thumbnailUrl"
+                  />
+                  <div class="release-date">Release: June 1, 2026</div>
+                  <meta itemprop="name" content="The Transaction" />
+                  <meta
+                    itemprop="description"
+                    content="An upcoming gripping tale of consequences and crime."
+                  />
+                </div>
+              </a>
+            </div>
+
             <!-- Mawad -->
             <div
               class="col-6 col-sm-4 col-md-3 col-lg-2 gallery-item"
@@ -485,7 +517,7 @@
                 rel="noopener noreferrer"
                 itemprop="url"
               >
-                <div class="shadow p-2 item rounded">
+                <div class="shadow-sm item rounded">
                   <img
                     src="https://crazymoonmovingpictures.com/uploads/web-series/mawad-2x3.webp"
                     alt="Mawad Poster"
@@ -517,7 +549,7 @@
                 rel="noopener noreferrer"
                 itemprop="url"
               >
-                <div class="shadow p-2 item rounded">
+                <div class="shadow-sm item rounded">
                   <img
                     src="https://crazymoonmovingpictures.com/uploads/web-series/tonhislava-2x3.webp"
                     alt="Tonhislava - The Glory Of Tonhi Poster"
@@ -525,6 +557,7 @@
                     loading="lazy"
                     itemprop="thumbnailUrl"
                   />
+                  <div class="release-date">Release: May 2027</div>
                   <meta
                     itemprop="name"
                     content="Tonhislava - The Glory Of Tonhi"
@@ -532,37 +565,6 @@
                   <meta
                     itemprop="description"
                     content="An upcoming mystical drama exploring ancient rituals."
-                  />
-                </div>
-              </a>
-            </div>
-
-            <!-- The Transaction -->
-            <div
-              class="col-6 col-sm-4 col-md-3 col-lg-2 gallery-item"
-              data-category="Upcoming"
-              itemprop="itemListElement"
-              itemscope
-              itemtype="https://schema.org/VideoObject"
-            >
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                itemprop="url"
-              >
-                <div class="shadow p-2 item rounded">
-                  <img
-                    src="https://crazymoonmovingpictures.com/uploads/movies/the-transaction-2x3.webp"
-                    alt="The Transaction Poster"
-                    class="img-fluid"
-                    loading="lazy"
-                    itemprop="thumbnailUrl"
-                  />
-                  <meta itemprop="name" content="The Transaction" />
-                  <meta
-                    itemprop="description"
-                    content="An upcoming gripping tale of consequences and crime."
                   />
                 </div>
               </a>
@@ -1314,8 +1316,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
     <!-- Custom Scripts -->
-    <script src="https://crazymoonmovingpictures.com/assets/js/main.js?v=1.17"></script>
-    <script src="https://crazymoonmovingpictures.com/assets/js/splide.js?v=1.17"></script>
-    <script src="https://crazymoonmovingpictures.com/assets/js/filter-movies.js?v=1.17"></script>
+    <script src="https://crazymoonmovingpictures.com/assets/js/main.js?v=1.18"></script>
+    <script src="https://crazymoonmovingpictures.com/assets/js/splide.js?v=1.18"></script>
+    <script src="https://crazymoonmovingpictures.com/assets/js/filter-movies.js?v=1.18"></script>
   </body>
 </html>
