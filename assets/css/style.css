@@ -319,7 +319,7 @@ a:hover {
 
 #upcomingAndReleasedMovies .release-date {
   position: absolute;
-  bottom: -100%;
+  bottom: 0;
   left: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.75);
@@ -328,10 +328,6 @@ a:hover {
   padding: 0.4rem 0.6rem;
   text-align: center;
   transition: bottom 0.3s ease-in-out;
-}
-
-#upcomingAndReleasedMovies .item:hover .release-date {
-  bottom: 0;
 }
 
 /* --------------------------------------------------------------- */
