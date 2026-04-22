@@ -369,43 +369,6 @@ a:hover {
   border-radius: 20px;
 }
 
-/* Overlay */
-.trailer-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.5);
-  z-index: 3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: 0.4s;
-}
-
-/* Play Button */
-.play-btn {
-  width: 90px;
-  height: 90px;
-  background: rgba(255,0,0,0.9);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 45px;
-  color: #fff;
-  transition: 0.3s;
-  box-shadow: 0 0 20px rgba(255,0,0,0.6);
-}
-
-/* Hover effect */
-.trailer-wrapper:hover .trailer-overlay {
-  background: rgba(0,0,0,0.2);
-}
-
-.trailer-wrapper:hover .play-btn {
-  transform: scale(1.2);
-}
-
 /* ------------------------------------------------------------------------ */
 #bts {
   background: #1a1a1a;
