@@ -332,6 +332,70 @@ a:hover {
 
 /* --------------------------------------------------------------- */
 
+/* Trailer Section */
+.trailer-section {
+  background: radial-gradient(circle at center, #0b0b0b 0%, #000 100%);
+  padding: 80px 0;
+}
+
+/* Wrapper */
+.trailer-wrapper {
+  max-width: 900px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.2);
+}
+
+/* Glow effect */
+.trailer-glow {
+  position: absolute;
+  inset: -2px;
+  border-radius: 20px;
+  background: linear-gradient(45deg, red, transparent, red);
+  filter: blur(20px);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+/* Video */
+.trailer-video {
+  position: relative;
+  z-index: 2;
+}
+
+/* Overlay */
+.trailer-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 3;
+  transition: 0.4s;
+}
+
+/* Play Button */
+.play-btn {
+  width: 80px;
+  height: 80px;
+  background: rgba(255,0,0,0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.trailer-wrapper:hover .trailer-overlay {
+  background: rgba(0,0,0,0.1);
+}
+
+.trailer-wrapper:hover .play-btn {
+  transform: scale(1.2);
+}
+
 /* ------------------------------------------------------------------------ */
 #bts {
   background: #1a1a1a;
