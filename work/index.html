@@ -70,6 +70,14 @@
       rel="stylesheet"
       href="https://crazymoonmovingpictures.com/assets/css/responsive.css?v=1.19"
     />
+
+    <style>
+      .read-more-btn {
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 5px;
+      }
+    </style>
   </head>
   <body id="workPage" class="loading">
     <div id="preloader">
@@ -266,9 +274,17 @@
                     >
                   </p>
                   <p class="storyline small mb-2">
-                    A poor car wiper stumbles upon a luxurious golden pass,
-                    which triggers sequence of spiral events that sets off the
-                    end result around him and family.
+                    <span class="short-text">
+                      A struggling car wiper’s life takes an unexpected turn when he discovers a mysterious golden pass—an object that promises opportunity but unleashes a chain of unforeseen consequences...
+                    </span>
+
+                    <span class="full-text d-none">
+                      A struggling car wiper’s life takes an unexpected turn when he discovers a mysterious golden pass—an object that promises opportunity but unleashes a chain of unforeseen consequences. As fortune knocks, so does chaos, pulling him and his family into a gripping spiral where every choice carries a price. What begins as a stroke of luck slowly transforms into a test of fate, morality, and survival.
+                      <br><br>
+                      Presented by LVR Productions and Crazymoon Moving Pictures, and directed by Swapnil Kotriwar, Machhli Jal Ki is a compelling tale of ambition, destiny, and the fragile line between dreams and downfall—now released on YouTube under the Jar Series.
+                    </span>
+
+                    <a href="javascript:void(0)" class="read-more-btn text-warning fw-semibold">Read more</a>
                   </p>
                   <p class="director small mb-1">
                     <strong>Director:</strong>
@@ -431,5 +447,25 @@
     <!-- Custom Script -->
     <script src="https://crazymoonmovingpictures.com/assets/js/main.js?v=1.19"></script>
     <script src="https://crazymoonmovingpictures.com/assets/js/filter-movies.js?v=1.19"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.querySelector(".read-more-btn");
+        const shortText = document.querySelector(".short-text");
+        const fullText = document.querySelector(".full-text");
+
+        btn.addEventListener("click", function () {
+          if (fullText.classList.contains("d-none")) {
+            fullText.classList.remove("d-none");
+            shortText.classList.add("d-none");
+            btn.innerText = "Read less";
+          } else {
+            fullText.classList.add("d-none");
+            shortText.classList.remove("d-none");
+            btn.innerText = "Read more";
+          }
+        });
+      });
+    </script>
   </body>
 </html>
