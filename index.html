@@ -629,7 +629,7 @@
       </div>
 
       <!-- Play Overlay -->
-      <div class="trailer-overlay d-flex align-items-center justify-content-center">
+      <div class="trailer-overlay" id="trailerOverlay">
         <span class="play-btn">
           <i class="bi bi-play-fill"></i>
         </span>
@@ -1381,5 +1381,32 @@
     <script src="https://crazymoonmovingpictures.com/assets/js/main.js?v=1.20"></script>
     <script src="https://crazymoonmovingpictures.com/assets/js/splide.js?v=1.20"></script>
     <script src="https://crazymoonmovingpictures.com/assets/js/filter-movies.js?v=1.20"></script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const overlay = document.getElementById("trailerOverlay");
+  const iframe = document.getElementById("trailerIframe");
+
+  overlay.addEventListener("click", function () {
+
+    // autoplay enable
+    let src = iframe.src;
+
+    if (!src.includes("autoplay=1")) {
+      iframe.src = src + "&autoplay=1";
+    }
+
+    // overlay hide
+    overlay.style.opacity = "0";
+
+    setTimeout(() => {
+      overlay.style.display = "none";
+    }, 400);
+
+  });
+
+});
+</script>
   </body>
 </html>
