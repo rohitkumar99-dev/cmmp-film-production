@@ -1,16 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   const carousel = document.getElementById("featured-image-carousel");
-  let slides = carousel.querySelectorAll(".splide__slide");
+  const slides = carousel.querySelectorAll(".splide__slide");
   const isMobile = window.innerWidth < 768;
 
   let imagesToLoad = 0;
-  let imagesProcessed = 0;
-
-  function checkDone() {
-    if (imagesProcessed === imagesToLoad) {
-      initSplide();
-    }
-  }
+  let imagesLoaded = 0;
 
   slides.forEach((slide) => {
     const img = slide.querySelector(
@@ -21,51 +15,48 @@ document.addEventListener("DOMContentLoaded", function () {
 
     imagesToLoad++;
 
-    if (img.complete) {
-      // Already loaded OR failed
-      if (img.naturalWidth === 0) {
-        slide.remove(); // broken image हटाओ
-      }
-      imagesProcessed++;
-      checkDone();
+    // Check if already loaded
+    if (img.complete && img.naturalWidth !== 0) {
+      imagesLoaded++;
     } else {
-      img.onload = () => {
-        imagesProcessed++;
-        checkDone();
-      };
+      img.addEventListener("load", () => {
+        imagesLoaded++;
+        if (imagesLoaded === imagesToLoad) initSplide();
+      });
 
-      img.onerror = () => {
-        slide.remove(); // broken image हटाओ
-        imagesProcessed++;
-        checkDone();
-      };
+      img.addEventListener("error", () => {
+        slide.remove();
+        imagesToLoad--; // exclude broken image
+        if (imagesLoaded === imagesToLoad) initSplide();
+      });
     }
   });
 
-  // fallback (agar koi image hi nahi ho)
-  if (imagesToLoad === 0) initSplide();
+  // If all were already loaded
+  if (imagesLoaded === imagesToLoad) initSplide();
 
   function initSplide() {
     const validSlides = carousel.querySelectorAll(".splide__slide");
 
-    if (validSlides.length === 0) {
-      console.warn("No valid slides available.");
-      return;
-    }
-
-    new Splide("#featured-image-carousel", {
-      type: "fade",
-      rewind: true,
-      autoplay: true,
-      interval: 5000,
-      arrows: validSlides.length > 1,
-      pagination: validSlides.length > 1,
-      breakpoints: {
-        768: {
-          arrows: false,
-          pagination: validSlides.length > 1,
+    if (validSlides.length > 0) {
+      const splideOptions = {
+        type: "fade",
+        rewind: true,
+        autoplay: true,
+        interval: 5000,
+        arrows: validSlides.length > 1,
+        pagination: validSlides.length > 1,
+        breakpoints: {
+          768: {
+            arrows: false,
+            pagination: validSlides.length > 1,
+          },
         },
-      },
-    }).mount();
+      };
+
+      new Splide("#featured-image-carousel", splideOptions).mount();
+    } else {
+      console.warn("No valid slides for Splide.");
+    }
   }
 });
